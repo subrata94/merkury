@@ -1,23 +1,10 @@
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: 
-    [class*="col-"] {
-        width: 100%;
-    }
-    */
-
     .logo-wrapper{
         width: 18.7%;
         height: 1.1%;
     }
-
 }
-
 @media only screen and (max-width: 360px) {
-    /* For mobile phones: 
-    [class*="col-"] {
-        width: 100%;
-    }
-    */
     .ham{
         display: block !important;
         color: white;
@@ -126,7 +113,6 @@
     .right-line{
         width: 22%;
     }
-
 }
 
 @media screen and (max-width: 740px){
@@ -155,16 +141,13 @@
         margin-right: auto;
         
     }
-
     .drag-right{
         text-align: center;
         padding:0 5em;
     }
-
     .drag-n-drop-bg {
         height: 190vh;
     }
-
     .drag-n-drop-bg > div {
         top: 10%;
     }
@@ -174,13 +157,11 @@
         margin-right: auto;
     }    
 }
-
 @media screen and (max-width: 1000px){
     .pricing{
         width: 100%;
     }
 }
-
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}

@@ -1,0 +1,539 @@
+//colors
+$color_black_rock_95-9_approx: rgba(4, 1, 44, 0.959);
+$white: white;
+$color_picton_blue_approx: #3fb1f3;
+$color_cornflower_blue_approx: #5584ff;
+$color_royal_blue_approx: #635eff;
+$color_bali_hai_approx: #8492af;
+$black: black;
+$color_romance_approx: rgba(254,254,254,1);
+$color_black_haze_approx: rgba(247,247,247,1);
+$gray:  gray;
+$color_cornflower_blue_60_approx: rgba(85, 132, 255, 0.6);
+$black_33: rgba(0,0,0,0.33);
+$color_nobel_approx: rgb(182, 182, 182);
+$color_midnight_approx: #0e1a35;
+$color_shark_approx: rgb(41, 37, 37);
+
+//fonts
+$font_0: "Roboto";
+$font_1: "sans-serif";
+
+//urls
+$url_0: url("../images/home.png");
+$url_1: url("../images/logo.png");
+$url_2: url("../images/drag.png");
+
+//@extend-elements
+//original selectors
+//.drag-content1, .drag-content2
+%extend_1 {
+	width: 50%;
+	padding-left: 0.9em;
+	padding-right: 0.9em;
+	float: left;
+}
+
+//original selectors
+//.tasks, .completed
+%extend_2 {
+	padding: 1.2em 0 1.1em 1.5em;
+	background-color: $white;
+	margin-bottom: 1em;
+}
+
+
+body {
+	font-family: $font_0, $font_1;
+	font-weight: 300;
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: $color_black_rock_95-9_approx;
+	overflow-x: hidden;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: 0.3s;
+	padding-top: 60px;
+	a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: $white;
+		display: block;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.3s;
+		&:hover {
+			font-weight: 400;
+			color: $color_picton_blue_approx;
+		}
+	}
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+}
+.ham {
+	display: none !important;
+}
+.background-home {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	> div {
+		&:first-child {
+			padding-left: 5em;
+			padding-right: 5em;
+		}
+		> p {
+			color: $white;
+			font-size: 30px;
+			font-weight: 100;
+			line-height: 14.4px;
+		}
+	}
+}
+.logo-wrapper {
+	width: 12%;
+	height: 1.2%;
+}
+.logo-mercury {
+	background-image: $url_1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.head-nav {
+	* {
+		display: inline;
+	}
+	> p {
+		font-weight: 400;
+		margin-right: 2em;
+		color: $white;
+	}
+}
+.login-button {
+	background-color: transparent;
+	color: $color_cornflower_blue_approx;
+	border: 1px solid $color_royal_blue_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 30px;
+	padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+	font-weight: bold;
+	&:hover {
+		background-color: $color_cornflower_blue_approx;
+		//Instead of the line below you could use @include transition-delay($delay-1, $delay-2, $delay-3, $delay-4, $delay-5, $delay-6, $delay-7, $delay-8, $delay-9, $delay-10)
+		transition-delay: 0.1s;
+		border-color: transparent;
+		color: $white;
+	}
+}
+.get-started {
+	margin-top: 6%;
+	> button {
+		background-color: $color_cornflower_blue_approx;
+		color: $white;
+		border: none;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 30px;
+		padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+		font-weight: bold;
+	}
+	> div:nth-child(2) {
+		color: $color_bali_hai_approx;
+	}
+}
+.dashboard-img {
+	width: 41%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.work {
+	width: 68%;
+	margin-left: auto;
+	margin-right: auto;
+	> div {
+		margin-bottom: 1.2em;
+		> div {
+			> img {
+				width: 21%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 2.5em;
+			}
+			&:nth-child(2) {
+				margin-bottom: 0.8em;
+				font-weight: 500;
+			}
+			&:nth-child(3) {
+				margin-bottom: 2em;
+				color: $color_bali_hai_approx;
+				font-weight: 400;
+				padding: 0 1em;
+			}
+		}
+		> button {
+			background-color: transparent;
+			color: $black;
+			border: 1px solid rgba(132, 146, 175, 30);
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 29px;
+			padding: 0.4rem 3.4rem 0.4rem 3.4rem;
+			font-weight: 300;
+		}
+	}
+}
+.gradient-bg {
+	background: $color_romance_approx;
+	background: linear-gradient(to bottom, $color_romance_approx 0, $color_black_haze_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr="$color_romance_approx", endcolorstr="$color_black_haze_approx", gradienttype=0 );
+	padding-top: 6em;
+	> div {
+		> p {
+			&:nth-child(2) {
+				color: $color_bali_hai_approx;
+				font-size: 12px;
+				padding-right: 8%;
+			}
+			&:nth-child(3) {
+				color: $color_bali_hai_approx;
+				font-size: 12px;
+				padding-right: 8%;
+			}
+		}
+		> div {
+			> * {
+				display: inline;
+				color: $color_cornflower_blue_approx;
+				font-weight: 400;
+				font-size: 15px;
+			}
+			> img {
+				margin-right: 0.3em;
+				width: 5%;
+			}
+			> div {
+				vertical-align: bottom;
+			}
+		}
+		&:first-child {
+			padding-left: 14%;
+			margin-top: 4%;
+		}
+	}
+}
+.drag-n-drop-bg {
+	width: 100%;
+	height: 70vh;
+	background-image: $url_2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	> div {
+		position: absolute;
+		width: 100%;
+		top: 19%;
+	}
+}
+.drag-left {
+	width: 57%;
+	float: left;
+}
+.drag-right {
+	width: 43%;
+	float: left;
+}
+.drag-contents {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.drag-content1 {
+	@extend %extend_1;
+}
+.drag-content2 {
+	@extend %extend_1;
+}
+.tasks {
+	@extend %extend_2;
+	> div {
+		vertical-align: middle;
+		display: inline-block;
+	}
+}
+.completed {
+	@extend %extend_2;
+	> div {
+		vertical-align: middle;
+		display: inline-block;
+	}
+}
+.initials {
+	vertical-align: 34%;
+	background-color: $color_picton_blue_approx;
+	text-align: center;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	padding: 0.3em 0.63em;
+	color: $white;
+}
+.v-align-50 {
+	vertical-align: 50%;
+}
+.v-align-25 {
+	vertical-align: 25%;
+}
+.pending {
+	margin-left: 1em;
+	line-height: 13px;
+	vertical-align: 0;
+	font-size: 11px;
+	width: 71%;
+}
+.doted-outline {
+	border: 1px dashed $gray;
+	background-color: transparent;
+	color: $color_bali_hai_approx;
+	text-align: center;
+	height: 61px;
+	> div {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(100%);
+	}
+}
+.dgd {
+	font-size: 35px;
+	margin-top: 1em;
+	color: $white;
+	font-weight: 100;
+	margin-bottom: 0.5em;
+}
+.rotate-180 {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: rotate(180deg);
+}
+.left-position {
+	left: 52.2%;
+	top: 67%;
+}
+.right-position {
+	right: 49%;
+	top: 41%;
+}
+.right-transform {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%,-75%);
+}
+.left-transform {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(51%,-41%);
+}
+.mg1 {
+	background-color: $color_cornflower_blue_60_approx;
+	height: 26px;
+	width: 26px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	position: absolute;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%,-50%);
+}
+.line2 {
+	border: 0;
+	background-color: $color_cornflower_blue_approx;
+	height: 1px;
+	width: 35.78em;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 1em;
+	right: 20%;
+	top: 50%;
+}
+.mg2 {
+	background-color: $color_cornflower_blue_approx;
+	height: 17px;
+	width: 17px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	position: absolute;
+}
+.line {
+	border: 0;
+	background-color: $color_cornflower_blue_approx;
+	height: 1px;
+	width: 25em;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 40%;
+	top: 50%;
+}
+.pointer1 {
+	left: 10%;
+	top: 36%;
+}
+.pointer2 {
+	right: 10%;
+	top: 62%;
+}
+.mockup {
+	height: 52%;
+	width: 62%;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pricing {
+	width: 75%;
+	margin: 5em auto 0.5em auto;
+	.col-sm-4 {
+		padding: 3.2em;
+		margin-bottom: 1em;
+		.box-shadow {
+			padding: 1.8em 0;
+			> div:nth-child(2) {
+				padding: 1.2em 0;
+			}
+		}
+	}
+}
+.box-shadow {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 37px 5px $black_33;
+	> div:nth-child(3) {
+		font-size: 12px;
+		line-height: 27px;
+		> div > span:first-child {
+			margin-right: 7px;
+			font-size: 16px;
+			vertical-align: middle;
+		}
+	}
+}
+#join {
+	color: $color_bali_hai_approx;
+}
+.join {
+	width: 80%;
+	margin: 2.5em auto 2.5em auto;
+	text-align: center;
+	> div {
+		display: inline-block;
+	}
+}
+.left-line {
+	width: 30%;
+	vertical-align: middle;
+	hr {
+		width: 50%;
+		float: right;
+	}
+}
+.right-line {
+	width: 30%;
+	vertical-align: middle;
+	hr {
+		width: 50%;
+		float: left;
+	}
+}
+.join-button-wrapper {
+	width: 18%;
+}
+.fb {
+	margin: 1px;
+}
+.tw {
+	margin: 1px;
+}
+.join-button {
+	padding: 0.4em 3em 0.4em 3em;
+	border: 1px solid $color_nobel_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 28px;
+	background-color: $color_cornflower_blue_approx;
+	color: $white;
+	font-weight: 500;
+	&:hover {
+		border: 1px solid $color_cornflower_blue_approx;
+		color: $color_cornflower_blue_approx;
+		background-color: transparent;
+	}
+}
+.footer {
+	background-color: $color_midnight_approx;
+	font-size: 13px;
+	padding: 2.8em 10em;
+	color: $color_bali_hai_approx;
+	font-weight: 500;
+}
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #636363ea;
+	color: $white;
+	cursor: pointer;
+	padding: 17px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	font-weight: 500;
+	&:hover {
+		background-color: $color_shark_approx;
+	}
+}
+button {
+	&:focus {
+		outline: 0;
+	}
+	&:active {
+		outline: 0;
+	}
+}
+.get-started-btn:hover {
+	background-color: transparent;
+	color: $white;
+	border: 1px solid $color_royal_blue_approx;
+}
+.see-more-btn:hover {
+	background-color: $color_cornflower_blue_approx;
+	color: $white;
+	border-color: transparent;
+	font-weight: 500;
+	//Instead of the line below you could use @include transition-delay($delay-1, $delay-2, $delay-3, $delay-4, $delay-5, $delay-6, $delay-7, $delay-8, $delay-9, $delay-10)
+	transition-delay: 0.1s;
+}
+.dgb-p p {
+	color: $color_bali_hai_approx;
+	font-size: 13px;
+	margin-bottom: 1.6em;
+}
+.dgb-span span {
+	color: $color_bali_hai_approx;
+}
+.psd-template > div {
+	&:first-child {
+		margin-top: 1.5em;
+		margin-bottom: 0.6em;
+	}
+	&:nth-child(2) {
+		color: $color_bali_hai_approx;
+	}
+	&:nth-child(3) {
+		color: $color_bali_hai_approx;
+		margin-bottom: 4em;
+	}
+}
