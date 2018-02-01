@@ -420,18 +420,44 @@ body{
 }
 
 .join{
-    width: 50%;
-    margin: auto 0;
+    width: 80%;
+    margin: 2em auto 2em auto;
+    text-align: center;
 }
 
-.left-line{
+.left-line hr{
+    width: 50%;
+    float: right;
+}
+.right-line hr {
+    width: 50%;
+    float: left;
+}
 
+.join > div {
+    display: inline-block;
+}
+.left-line{
+    width: 38%;
+    vertical-align: middle;
 }
 .right-line{
-
+    width: 38%;
+    vertical-align: middle;
 }
 
-
+.join-button-wrapper{
+    width: 22%;
+}
+.join-button{
+    /* width: 80%; */
+    padding: 0.4em 3em 0.4em 3em;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 28px;
+    background-color: #5584ff;
+    color: white;
+    font-weight: 500;
+}
 .footer{
     background-color:  #0e1a35;
 }

@@ -104,12 +104,27 @@
     }    
 
     .pricing{
-        width: 80%;
+        width: 80% !important;
         margin: 0 auto;
     }
 
     .pricing .col-sm-4 {
         padding: 1em !important;
+    }
+
+
+    .join{
+        width: 100%;
+    }
+    .join-button-wrapper{
+        width: 46%;
+    }
+    .left-line{
+        width: 22%;
+    }
+
+    .right-line{
+        width: 22%;
     }
 
 }
@@ -158,6 +173,12 @@
         margin-left: auto;
         margin-right: auto;
     }    
+}
+
+@media screen and (max-width: 1000px){
+    .pricing{
+        width: 100%;
+    }
 }
 
 @media screen and (max-height: 450px) {
