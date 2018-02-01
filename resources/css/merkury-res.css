@@ -1,0 +1,166 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: 
+    [class*="col-"] {
+        width: 100%;
+    }
+    */
+
+    .logo-wrapper{
+        width: 18.7%;
+        height: 1.1%;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    /* For mobile phones: 
+    [class*="col-"] {
+        width: 100%;
+    }
+    */
+    .ham{
+        display: block !important;
+        color: white;
+        font-size:30px;
+        cursor:pointer;
+    }
+    .ham:hover{
+        color: aqua;
+        transition-delay: 0.1s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+    .dashboard-img{
+        display: none;
+    }
+    .head-nav{
+        display: none !important;
+    }
+
+    .get-started{
+        margin-top: 6em;
+    }
+
+    .get-started > button{
+        background-color: #5584ff;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 1.2rem 5.55rem 1.2rem 5.5rem;
+        font-weight: bold; 
+    }
+
+    .background-home{
+        height: 78vh;
+    }
+
+    .background-home > div:first-child{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .logo-wrapper{
+        width: 40%;
+        height: 10%;
+    }
+    
+    .work{
+        margin-top: 3em !important;
+    }
+
+    .drag-right, .drag-left{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .drag-right{
+        padding: 2em !important;
+    }
+
+    .drag-content1{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .drag-content2{
+        width: 100%;
+    }
+    .drag-right{
+        text-align: center;
+    }
+
+    .drag-n-drop-bg {
+        height: 170vh !important;
+    }
+
+    .drag-n-drop-bg > div {
+        top: 7% !important;
+    }
+
+    .drag-contents {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .pricing{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .pricing .col-sm-4 {
+        padding: 1em !important;
+    }
+
+}
+
+@media screen and (max-width: 740px){
+    .ham{
+        display: block !important;
+        color: white;
+        font-size:30px;
+        cursor:pointer;
+    }
+    .ham:hover{
+        color: aqua;
+        transition-delay: 0.1s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+    .dashboard-img{
+        display: none;
+    }
+    .head-nav{
+        display: none !important;
+    }
+    
+    .drag-right, .drag-left{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .drag-right{
+        text-align: center;
+        padding:0 5em;
+    }
+
+    .drag-n-drop-bg {
+        height: 190vh;
+    }
+
+    .drag-n-drop-bg > div {
+        top: 10%;
+    }
+    .drag-contents {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
