@@ -339,11 +339,13 @@ body{
 }
 
 .right-transform{
-    transform: translate(-50%,-75%);
+    transform: translate(-50%,-80%);
 }
 .left-transform{
-    transform: translate(51%,-41%);
+    transform: translate(50%,-39%);
 }
+
+
 
 .mg1{
     background-color: rgba(85, 132, 255, 0.6);
@@ -392,6 +394,52 @@ body{
     top: 62%;
 }
 
+.left-panel, .right-panel{
+    width: 50%;
+    position: absolute
+}
+
+.left-panel{
+    left: 12%;
+    top: 39%
+}
+
+.right-panel{
+    right: 12%;
+    bottom: 13%;
+}
+
+.line-right {
+    float: right;
+    width: 74%;
+}
+
+.line-left{
+}
+
+.line-right > hr,.line-left > hr {
+    border-color: #5584ff;
+}
+
+.outer-circle{
+    top: 25%;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgba(85, 132, 255, 0.6);
+    position: absolute;
+}
+
+.inner-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5584ff;
+    margin-right:auto;
+    margin-left: auto;
+    transform: translateY(20%);
+}
+
 .mockup{
     height: 52%;
     width: 62%;
@@ -399,7 +447,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
+.psd-template{
+    background: linear-gradient(#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,
+    #f6f6fa,#f9f9ff,#f9f9ff,#f9f9ff,#f9f9ff,white);
+    margin-bottom: 5em;
+}
 .psd-template > div:first-child{
     margin-top: 1.5em;
     margin-bottom: 0.6em;
@@ -407,6 +459,9 @@ body{
 
 .psd-template > div:nth-child(2),.psd-template > div:nth-child(3){
     color: #8492af;
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -417,7 +472,7 @@ body{
 
 .pricing{
     width: 75%;
-    margin: 5em auto 0.5em auto;
+    margin: 0 auto 0.5em auto;
 }
 
 .pricing .col-sm-4 {
