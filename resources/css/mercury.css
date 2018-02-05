@@ -1,145 +1,5 @@
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(4, 1, 44, 0.959);
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    font-weight: 400;
-    color: #3fb1f3;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-.ham{
-    display: none !important;
-}
-.background-home{
-    background-image: url("../images/home.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
-
-.background-home > div:first-child{
-    padding-left: 5em;
-    padding-right: 5em;
-}
-
-.background-home > div > p{
-    color:  #ffffff;
-    font-size: 30px;/* Approximation due to font substitution */
-    font-weight: 100;
-    line-height: 14.4px;
-}
-
-.logo-wrapper{
-    width: 12%;
-    height: 1.2%;
-}
-
-.logo-mercury{
-    background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.head-nav *{
-    display: inline;
-}
-
-.head-nav > p{
-    font-weight: 400;
-    margin-right: 2em;
-    color: white;
-}
-
-.head-nav > p:hover{
-    cursor: pointer;
-    color: #3fb1f3;
-}
-
-.login-button{
-    background-color: transparent;
-    color: #5584ff;
-    border: 1px solid #635eff;
-    border-radius: 30px;
-    padding: 0.6rem 3.5rem 0.6rem 3.5rem;
-    font-weight: bold;
-}
-
-.login-button:hover{
-    background-color: #5584ff;
-    border-color: transparent;
-    color: white;
-}
-
-.get-started{
-    margin-top: 6%;
-}
-.get-started > div:nth-child(2){
-    color: #8492af;
-}
-
-.get-started > button{
-    background-color: #5584ff;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 0.6rem 3.5rem 0.6rem 3.5rem;
-    font-weight: bold; 
-}
-
-.get-started-btn:hover{
-    background-color: transparent;
-    color: white;
-    border: 1px solid #635eff;
-}
-
-.see-more-btn:hover{
-    background-color: #5584ff;
-    color: white;
-    border-color: transparent;
-    font-weight: 500;
-    transition-delay: 0.1s;
-}
-
-.dashboard-img{
-    width: 41%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.work{
+/* .work{
     width: 68%;
     margin-left: auto;
     margin-right: auto;
@@ -173,59 +33,10 @@ body{
     color: #8492af;
     font-weight: 400;
     padding: 0 1em;
-}
+} */
 
-.gradient-bg{
-    background: rgba(254,254,254,1);
-    background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(247,247,247,1)));
-    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
-    background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
-    background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
-    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f7f7f7', GradientType=0 );
-    padding-top: 6em; 
-}
 
-.gradient-bg > div > p:nth-child(2){
-    color: #8492af;
-    font-size: 12px;
-    padding-right: 8%;
-}
-.gradient-bg > div > p:nth-child(3){
-    color: #8492af;
-    font-size: 12px;
-    padding-right: 8%;
-}
-
-.gradient-bg > div > div > *{
-    display: inline;
-    color: #5584ff;
-    font-weight: 400;
-    font-size: 15px;
-}
-.gradient-bg > div:first-child{
-    padding-left: 14%;
-    margin-top: 4%;
-}
-.gradient-bg > div > div > img{
-    margin-right: 0.3em;
-    width: 5%;
-}
-.gradient-bg > div > div > div {
-    vertical-align: bottom;
-}
-
-.drag-n-drop-bg{
-    width: 100%;
-    height: 70vh;
-    background-image: url("../images/drag.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.drag-left{
+/* .drag-left{
     width: 57%;
     float: left;
 }
@@ -233,8 +44,8 @@ body{
 .drag-right{
     width: 43%;
     float: left;
-}
-.drag-contents{
+} */
+/* .drag-contents{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -245,26 +56,20 @@ body{
     padding-left: 0.9em;
     padding-right: 0.9em;
     float: left;
-}
+} */
 
-.drag-n-drop-bg > div{
-    position: absolute;
-    width: 100%;
-    top: 19%;
-}
 
-.tasks, .completed{
+/* .tasks, .completed{
     padding: 1.2em 0 1.1em 1.5em;
     background-color: white;
     margin-bottom: 1em;
     
-}
+} */
 
-.completed > div,
-.tasks > div{
+/* .tasks > div{
     vertical-align: middle;
     display: inline-block;
-}
+} */
 .initials{
     vertical-align: 34%;
     background-color: rgb(63, 154, 230);
@@ -273,6 +78,7 @@ body{
     padding: 0.3em 0.63em;
     color: white;
 }
+
 .v-align-50{
     vertical-align: 50%;
 }
@@ -563,7 +369,7 @@ body{
     font-weight: 500;
 }
 
-.footer > span:nth-child(2) > span:hover{
+.footer > div:last-child > span:nth-child(2) > span:hover{
     color: white;
     cursor: pointer;
 }

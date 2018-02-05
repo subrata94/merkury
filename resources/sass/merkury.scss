@@ -1,0 +1,305 @@
+$roboto: 'Roboto', sans-serif;
+$dark-blue: rgba(4, 1, 44, 0.959);
+$button-blue:  #5584ff;
+$border-blue: #635eff;
+$text-blue: #8492af;
+
+%no-margin-h {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.dashboard{
+    @extend %no-margin-h;
+    .background-home{
+        background-image: url("../images/home.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        height: calc(100vh, 4em);
+        .home {
+            padding-left: 5em;
+            padding-right: 5em;
+            padding-top: 3em;
+            @extend %no-margin-h;
+            .logo-wrapper{
+                width: 12%;
+                height: 1.2%;
+                float: left !important;
+            }
+            .head-nav {
+                float: right !important;
+                *{
+                    display: inline;
+                }
+                p{
+                    font-weight: 400;
+                    margin-right: 2em;
+                    color: white;
+                    font-size: 14px;
+                    &:hover{
+                        cursor: pointer;
+                        color: $text-blue;
+                    }
+                }
+                .login-button{
+                    background-color: transparent;
+                    color: $text-blue;
+                    border: 1px solid $border-blue;
+                    border-radius: 30px;
+                    padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: $button-blue;
+                        border-color: transparent;
+                        color: white;
+                    }
+                }
+            }
+            .ham-nav{
+                float: right !important;
+                .ham{
+                    display: none !important;
+                }
+                .sidenav{
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(4, 1, 44, 0.959);
+                    overflow-x: hidden;
+                    transition: 0.3s;
+                    padding-top: 60px;
+                    a {
+                        padding: 8px 8px 8px 32px;
+                        text-decoration: none;
+                        font-size: 25px;
+                        color: white;
+                        display: block;
+                        transition: 0.3s;
+                        &:hover{
+                            font-weight: 400;
+                            color: $text-blue;
+                        }
+                    }
+                    .closebtn {
+                        position: absolute;
+                        top: 0;
+                        right: 25px;
+                        font-size: 36px;
+                        margin-left: 50px;
+                    }
+                }
+            }
+            p {
+                color:  white;
+                font-size: 30px;/* Approximation due to font substitution */
+                font-weight: 100;
+                line-height: 14.4px;
+            }
+        }
+
+        .get-started{
+            margin-top: 6%;
+            text-align: center;
+            div{
+                &:first-child{
+                    color: white;
+                    font-size: 36px;
+                    font-weight: 100;
+                }
+                &:nth-child(2){
+                    color: $text-blue;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+            }
+            .get-started-btn{
+                background-color: #5584ff;
+                color: white;
+                border: 1px solid transparent;
+                border-radius: 30px;
+                padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+                font-weight: bold; 
+                &:hover{
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid #635eff;
+                }
+            }
+        }
+        .dashboard-img{
+            width: 41%;
+            margin-top: 4em;
+            margin-right: auto;
+            margin-left: auto;
+            bottom: 0;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.work{
+    @extend %no-margin-h;
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    margin-top: 9em;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+
+    div {
+        margin-bottom: 1.2em;
+        div {
+            img {
+                width: 21%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2.5em;
+            }
+            &:nth-child(2) {
+                margin-bottom: 0.8em;
+                font-weight: 500;
+            }
+            &:nth-child(3) {
+                margin-bottom: 2em;
+                color: #8492af;
+                font-weight: 400;
+                padding: 0 1em;
+            }
+        }
+        .see-more-btn {
+            background-color: transparent;
+            color: black;
+            border: 1px solid rgba(132, 146, 175, 30);
+            border-radius: 29px;
+            padding: 0.4rem 3.4rem 0.4rem 3.4rem;
+            font-weight: 300;
+        }
+    }
+}
+
+.info{
+    background: rgba(254,254,254,1);
+    background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(247,247,247,1)));
+    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(247,247,247,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f7f7f7', GradientType=0 );
+    padding-top: 6em;
+    .info-d{
+        margin-top: 4%;
+        margin-bottom: 3em;
+        padding-left: 14%;
+    }
+    div{    
+        p{
+            &:nth-child(2){
+                color: $text-blue;
+                font-size: 12px;
+                padding-right: 8%;
+            }
+            &:nth-child(3){
+                color: $text-blue;
+                font-size: 12px;
+                padding-right: 8%;
+            }
+        }
+        div{
+            *{
+                display: inline;
+                color: #5584ff;
+                font-weight: 400;
+                font-size: 15px;
+            }
+            span{
+                font-size: 22px !important;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.drag-n-drop-bg{
+    position: relative;
+    @extend %no-margin-h;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/drag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .con {
+        width: 100%;
+        top: 19%;
+        .drag-left{
+            width: 57%;
+            float: left;
+            div{
+                .drag-contents{
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .drag-content1,.drag-content2{
+                        width: 50%;
+                        padding-left: 0.9em;
+                        padding-right: 0.9em;
+                        float: left;
+                        div {
+                            .initials{
+                                vertical-align: 34%;
+                                background-color: rgb(63, 154, 230);
+                                text-align: center;
+                                border-radius: 50%;
+                                padding: 0.3em 0.63em;
+                                color: white;
+                            }
+                        }
+                    }
+                    // %content{
+                    //     padding: 1.2em 0 1.1em 1.5em;
+                    //     background-color: white;
+                    //     margin-bottom: 1em;
+                    //     div{
+                    //         vertical-align: middle;
+                    //         display: inline-block;
+                    //     }
+                    // }
+                    %content{
+                        padding: 1.2em 0 1.1em 1.5em;
+                        background-color: white;
+                        margin-bottom: 1em;
+                        .option,.initials,.pending {
+                            vertical-align: middle;
+                            display: inline-block;
+                        }
+                    }
+                    .drag-content1{
+                        .tasks{
+                            @extend %content;
+                        }
+                    }
+                    .drag-content2{
+                        .completed{
+                            @extend %content;
+                        }
+                    }
+                }
+            }
+        }
+        .drag-right{
+            width: 43%;
+            float: left;
+        }
+    }
+}
