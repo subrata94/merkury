@@ -1,75 +1,4 @@
 
-/* .work{
-    width: 68%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.work > div {
-    margin-bottom: 1.2em;
-}
-.work > div > div > img {
-    width: 21%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2.5em;
-}
-
-.work > div > div:nth-child(2) {
-    margin-bottom: 0.8em;
-    font-weight: 500;
-}
-
-.work > div > button {
-    background-color: transparent;
-    color: black;
-    border: 1px solid rgba(132, 146, 175, 30);;
-    border-radius: 29px;
-    padding: 0.4rem 3.4rem 0.4rem 3.4rem;
-    font-weight: 300;
-}
-
-.work > div > div:nth-child(3) {
-    margin-bottom: 2em;
-    color: #8492af;
-    font-weight: 400;
-    padding: 0 1em;
-} */
-
-
-/* .drag-left{
-    width: 57%;
-    float: left;
-}
-
-.drag-right{
-    width: 43%;
-    float: left;
-} */
-/* .drag-contents{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.drag-content1,.drag-content2{
-    width: 50%;
-    padding-left: 0.9em;
-    padding-right: 0.9em;
-    float: left;
-} */
-
-
-/* .tasks, .completed{
-    padding: 1.2em 0 1.1em 1.5em;
-    background-color: white;
-    margin-bottom: 1em;
-    
-} */
-
-/* .tasks > div{
-    vertical-align: middle;
-    display: inline-block;
-} */
 .initials{
     vertical-align: 34%;
     background-color: rgb(63, 154, 230);
@@ -93,7 +22,6 @@
     font-size: 11px;
     width: 71%;
 }
-
 
 .doted-outline{
     border: 1px dashed gray;
@@ -207,28 +135,38 @@
 
 .left-panel{
     left: 12%;
-    top: 39%
+    top: 42%
 }
 
 .right-panel{
     right: 12%;
-    bottom: 13%;
+    bottom: 14%;
 }
 
 .line-right {
     float: right;
-    width: 74%;
+    width: 71%;
 }
 
 .line-left{
+    width: 72%;
+}
+
+.line-left .outer-circle{
+    left: 70%;
+}
+
+.line-right .outer-circle{
+    left: 28%;
 }
 
 .line-right > hr,.line-left > hr {
     border-color: #5584ff;
+    margin-top: 9px;
 }
 
 .outer-circle{
-    top: 25%;
+    top: 18%;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -342,19 +280,20 @@
 }
 
 .join-button-wrapper{
-    width: 18%;
+    width: 13%;
+    margin: 0 1.5em;
 }
 .fb,.tw{
     margin: 1px;
 }
 .join-button{
-    /* width: 80%; */
-    padding: 0.4em 3em 0.4em 3em;
+    width: 100%;
     border: 1px solid rgb(182, 182, 182);
     border-radius: 28px;
     background-color: #5584ff;
     color: white;
     font-weight: 500;
+    height: 30px;
 }
 .join-button:hover{
     border: 1px solid #5584ff;
@@ -374,8 +313,7 @@
     cursor: pointer;
 }
 
-#myBtn
 button:focus,
 button:active{
-    outline: 0;
+    outline: 0 !important;
 }

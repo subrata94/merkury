@@ -105,7 +105,6 @@
         padding: 1em !important;
     }
 
-
     .join{
         width: 100%;
     }
@@ -144,7 +143,7 @@
     }
     
     .drag-right, .drag-left{
-        width: 100%;
+        width: 100% !important;
         margin-left: auto;
         margin-right: auto;
         
@@ -160,10 +159,13 @@
         top: 10%;
     }
     .drag-contents {
-        width: 90%;
+        width: 90% !important;
         margin-left: auto;
         margin-right: auto;
-    }    
+    }  
+    .drag-left .container-fluid{
+        padding: 0;
+    }  
     .mockup{
         width: 80%;
     }
@@ -171,10 +173,22 @@
     .left-panel,.right-panel{
         display: none;
     }
+    
+    .pricing .col-sm-4 {
+        padding: 3.2em 13em;
+    } 
+
+    .join-button-wrapper{
+        width: 23%;
+    }
 }
 @media screen and (max-width: 1000px){
     .pricing{
         width: 100%;
+    }
+
+    .logo-line:after{
+        border: none !important;
     }
 }
 @media screen and (max-height: 450px) {
