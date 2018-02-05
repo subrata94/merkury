@@ -63,7 +63,7 @@ body{
             .ham-nav{
                 float: right !important;
                 .ham{
-                    display: none !important;
+                    display: none;
                 }
                 .sidenav{
                     height: 100%;
@@ -184,6 +184,12 @@ body{
             border-radius: 29px;
             padding: 0.4rem 3.4rem 0.4rem 3.4rem;
             font-weight: 300;
+            &:hover{
+                background-color: $button-blue;
+                border-color: transparent;
+                color: white;
+                font-weight: 500;
+            }
         }
     }
 }
@@ -303,3 +309,23 @@ body{
         }
     }
 }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #5f5e5eea;
+    color: white;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 22px;
+    &:hover {
+        background-color: rgb(41, 37, 37);
+    }
+}  

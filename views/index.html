@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='../resources/images/favicon.ico' />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/custom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury.css" />
@@ -163,14 +164,29 @@
                 </div>
                 <div class="drag-right">
                     <div class="dgd">Drag & Drop</div> 
-                    <div class="dgb-p col-sm-8 no-padding-h">
-                        <p>Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.
-                            </p>
+                    <div class="dgd-contents">
+                        <div class="dgd-content1">
+                            <div class="dgb-p col-sm-8 no-padding-h">
+                                <p>Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.
+                                    </p>
+                            </div>
+                            <div class="dgb-p col-sm-8 no-padding-h">
+                                <p>Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.
+                                    </p>
+                            </div>  
+                        </div>
+                        <div class="dgd-content1">
+                            <div class="dgb-p col-sm-8 no-padding-h">
+                                <p>Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.
+                                    </p>
+                            </div>
+                            <div class="dgb-p col-sm-8 no-padding-h">
+                                <p>Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.
+                                    </p>
+                            </div>  
+                        </div>
                     </div>
-                    <div class="dgb-p col-sm-8 no-padding-h">
-                        <p>Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.
-                            </p>
-                    </div>
+                    
                     <div class="dgb-span col-sm-7 no-padding-h font-size-28">
                         <span class="fa fa-chevron-circle-left"></span>&nbsp;&nbsp;
                         <span class="fa fa-chevron-circle-right"></span>
@@ -336,7 +352,7 @@
         </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-angle-double-up"></span></button>
+    <button id="myBtn" title="Go to top"><span class="fa fa-angle-double-up"></span></button>
 
     <script src="../resources/js/jquery.min.js"></script>
     <script src="../resources/js/bootstrap.min.js"></script>
@@ -367,7 +383,8 @@
             document.getElementById(data).style.display = "none";
             ev.target.appendChild(document.getElementById(data));
         }
-
+        function openNav() {document.getElementById("mySidenav").style.width = "250px";}
+        function closeNav() {document.getElementById("mySidenav").style.width = "0";}
         // When the user clicks on the button, scroll to the top of the document
         $(function(){
             var id;

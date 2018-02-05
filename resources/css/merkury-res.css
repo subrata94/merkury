@@ -4,7 +4,10 @@
         height: 1.1%;
     }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
+    .ham-nav{
+        display: block !important;
+    }
     .ham{
         display: block !important;
         color: white;
@@ -25,10 +28,10 @@
     }
 
     .get-started{
-        margin-top: 6em;
+        margin-top: 8em !important;
     }
 
-    .get-started > button{
+    .get-started-btn{
         background-color: #5584ff;
         color: white;
         border: none;
@@ -37,18 +40,21 @@
         font-weight: bold; 
     }
 
-    .background-home{
-        height: 78vh;
-    }
-
     .background-home > div:first-child{
         padding-left: 2em;
         padding-right: 2em;
     }
 
+    .dashboard .background-home .home {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: 3em;
+        margin-bottom: 3em;
+    }
+
     .logo-wrapper{
-        width: 40%;
-        height: 10%;
+        width: 40% !important;
+        height: 10% !important;
     }
     
     .work{
@@ -56,7 +62,7 @@
     }
 
     .drag-right, .drag-left{
-        width: 100%;
+        width: 100% !important;
         margin-left: auto;
         margin-right: auto;
     }
@@ -66,11 +72,11 @@
     }
 
     .drag-content1{
-        width: 100%;
+        width: 100% !important;
         margin-bottom: 2em;
     }
     .drag-content2{
-        width: 100%;
+        width: 100% !important;
     }
     .drag-right{
         text-align: center;
@@ -113,6 +119,8 @@
     .right-line{
         width: 22%;
     }
+
+
 }
 
 @media screen and (max-width: 740px){
@@ -156,6 +164,13 @@
         margin-left: auto;
         margin-right: auto;
     }    
+    .mockup{
+        width: 80%;
+    }
+
+    .left-panel,.right-panel{
+        display: none;
+    }
 }
 @media screen and (max-width: 1000px){
     .pricing{

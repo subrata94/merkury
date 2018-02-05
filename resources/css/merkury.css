@@ -46,7 +46,7 @@ body {
     .dashboard .background-home .home .ham-nav {
       float: right !important; }
       .dashboard .background-home .home .ham-nav .ham {
-        display: none !important; }
+        display: none; }
       .dashboard .background-home .home .ham-nav .sidenav {
         height: 100%;
         width: 0;
@@ -140,6 +140,11 @@ body {
       border-radius: 29px;
       padding: 0.4rem 3.4rem 0.4rem 3.4rem;
       font-weight: 300; }
+      .work div .see-more-btn:hover {
+        background-color: #5584ff;
+        border-color: transparent;
+        color: white;
+        font-weight: 500; }
 
 .info {
   background: #fefefe;
@@ -212,5 +217,24 @@ body {
     .drag-n-drop-bg .con .drag-right {
       width: 43%;
       float: left; }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 18px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #5f5e5eea;
+  color: white;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 22px; }
+  #myBtn:hover {
+    background-color: #292525; }
 
 /*# sourceMappingURL=merkury.css.map */
