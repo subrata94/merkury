@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/custom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/mercury.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury-res.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
@@ -74,7 +73,7 @@
                 <button class="see-more-btn">See more</button>
             </div>
         </div>
-        <div class="row no-margin-h info padding-bottom-3">
+        <div class="row info">
                 <div class="col-sm-6 info-d">
                     <div class="font-size-40 margin-08-bottom">All You need is a browser!</div>
                     <p class="margin-2-bottom">Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.
@@ -166,28 +165,28 @@
                     <div class="dgd">Drag & Drop</div> 
                     <div class="dgd-contents">
                         <div class="dgd-content1">
-                            <div class="dgb-p col-sm-8 no-padding-h">
+                            <div class="dgd-p col-sm-8 no-padding-h">
                                 <p>Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.1
                                     </p>
                             </div>
-                            <div class="dgb-p col-sm-8 no-padding-h">
+                            <div class="dgd-p col-sm-8 no-padding-h">
                                 <p>Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.
                                     </p>
                             </div>  
                         </div>
                         <div class="dgd-content2 hide">
-                            <div class="dgb-p col-sm-8 no-padding-h">
+                            <div class="dgd-p col-sm-8 no-padding-h">
                                 <p>Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.2
                                     </p>
                             </div>
-                            <div class="dgb-p col-sm-8 no-padding-h">
+                            <div class="dgd-p col-sm-8 no-padding-h">
                                 <p>Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.
                                     </p>
                             </div>  
                         </div>
                     </div>
                     
-                    <div class="dgb-span col-sm-7 no-padding-h font-size-28">
+                    <div class="dgd-span col-sm-7 no-padding-h font-size-28">
                         <span class="fa fa-chevron-circle-left slider-left"></span>&nbsp;&nbsp;
                         <span class="fa fa-chevron-circle-right slider-right"></span>
                     </div>
@@ -195,7 +194,7 @@
             </div>
         </div>
     
-        <div class="row no-margin-h psd-template relative-pos">
+        <div class="row psd-template">
             <div class="text-center font-size-40 bold-1">Powerfull PSD Template</div>
             <div class="text-center">Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.</div>
             <div class="text-center">Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.</div>
@@ -241,7 +240,7 @@
         <div class="row no-margin-h pricing">
             <div class="font-size-36 text-center bold-1">Check our pricing!</div>
             <div class="col-sm-4">
-                <div class="box-shadow hvr-grow-shadow ">
+                <div class="box-shadow hvr-grow-shadow">
                     <div class="text-uppercase text-center bold-5">bronze plan</div>
                     <div class="text-center">
                         <span class="font-size-26 bold-7">$</span>
@@ -298,7 +297,7 @@
             </div>
         </div>
 
-        <div id="join" class="row subscription no-margin-h margin-1-bottom">
+        <div id="join" class="row subscription">
             <div>
                 <div class="col-sm-12">Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.</div>
                 <div class="col-sm-12">Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.</div>
@@ -336,7 +335,6 @@
     <script>
 
         window.onscroll = function() {scrollFunction()};
-
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("myBtn").style.display = "block";
@@ -346,18 +344,16 @@
         }
         function openNav() {document.getElementById("mySidenav").style.width = "250px";}
         function closeNav() {document.getElementById("mySidenav").style.width = "0";}
-        // When the user clicks on the button, scroll to the top of the document
+
         $(function(){
             var id,
                 slider=1;
             $('#myBtn').on('click',function(){
                 $('.dashboard').get(0).scrollIntoView({ behavior: 'smooth' });
             });
-
             $('.tasks').on('dragstart',function(ev){
                 id = '#'+ev.target.id;
             });
-
             $('#drp').on('dragover',function(ev){
                 ev.preventDefault();
             });
@@ -365,12 +361,10 @@
                 ev.preventDefault();
                 $(id+' .pending div:last-child').addClass("text-green");
                 $(id+' .pending div:last-child').html("<span class=\"glyphicon glyphicon-ok-circle\"></span> Completed");
-                //alert($(id).html());
                 var html = "<div class=\"completed\">"+$(id).html()+"</div>";
                 $(id).hide();
                 $(this).before(html);
             });
-
             $('.slider-left').on('click',function(){
                 if(slider != 1){
                     $('.dgd-content'+slider).fadeOut(1).delay(500);
