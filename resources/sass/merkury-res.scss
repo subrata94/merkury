@@ -6,13 +6,13 @@
             }
         }
     }
-
-
     .pricing{
-        width: 100%;
         > div{
             > div {
-                padding: 5em 0em;
+                padding: 0;
+                h1{
+                    margin-bottom: 0.5em;
+                }
             }
         }
     }
@@ -20,6 +20,32 @@
         top: 4em !important;
         right: -2em !important;
         width: 40em !important;
+    }
+    .psd-template > div > div{
+        .left-panel{
+            top: 45%;
+            hr{
+                margin-bottom: 14px;
+            }
+            .line-left{
+                width: 74% !important;
+            }
+        }
+        .right-panel {
+            bottom: 12%;
+            hr{
+                margin-bottom: 14px;
+            }
+        }
+        .right-content, .left-content{
+            font-size: 10px;
+        }
+        .outer-circle {
+            top: 21% !important;
+        }
+        .mockup{
+            width: 62%;
+        }
     }
 }
 @media screen and (max-width: 1100px){
@@ -52,9 +78,17 @@
 }
 @media screen and (max-width: 991px){
 
+    .dashboard{
+        .get-started{
+            padding: 11em 0 15em 0 !important;
+        }  
+    }
+
     .drag-n-drop-bg{
+        padding: 4em 0;
         .drag-right{
             padding: 0 15px;
+            margin-bottom: 0;
         }
     }
 
@@ -67,8 +101,13 @@
     }
 
     .pricing{
+        margin-bottom: 2em;
         > div{
             > div {
+                h1{
+                    margin-bottom: 1em;
+                }
+
                 > div{
                     > div{
                         padding: 0;
@@ -83,6 +122,39 @@
         width: 45em !important;
         right: -11em !important;
     }
+
+    .psd-template{ 
+        > div{
+            > div{
+                .fst {
+                    margin-bottom: 7px !important;
+                }
+                .left-panel{
+                    top: 52%;
+                    hr{
+                        margin-top: 6px;
+                        margin-bottom: 14px;
+                    }
+                }
+                .right-panel {
+                    bottom: 11%;
+                    hr{
+                        margin-top: 6px;
+                        margin-bottom: 14px;
+                    }
+                }
+                .rp-title{
+                    font-size: 15px;
+                }
+                .right-content, .left-content{
+                    font-size: 9px;
+                }
+                .mockup{
+                    width: 62%;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 900px){
     .grupa-img{
@@ -92,8 +164,10 @@
     }
 }
 @media screen and (max-width: 768px){
-    .get-started{
-        padding: 9em 0 9em 0 !important;
+    .dashboard{
+        .get-started{
+            padding: 10em 0 6em 0 !important
+        }  
     }
     .footer{
         text-align: center;
@@ -143,10 +217,11 @@
                 > div {
                     margin-bottom: 3em;
                     &:last-child{
-                        left: 50%;
-                        transform: translateX(-50%);
+                        float: none;
+                        display: inline-block;
+                        //transform: translateX(-50%);
                     }
-                    &:nth-child(2){
+                    &:nth-child(1),&:nth-child(2){
                         &:after{
                             content: none;
                         }
@@ -158,6 +233,12 @@
 
     .info{
         padding: 3.5em 0 5em 0;
+        .info-d{
+            p{
+                width: 100% !important;
+                padding-right: 15px;
+            }
+        }
         .grupa-img{
             display: none;
         }
@@ -176,9 +257,11 @@
     
     .drag-left .container-fluid{
         padding: 0;
-    }  
-    .mockup{
-        width: 80%;
+    } 
+    .psd-template{ 
+        .mockup{
+            width: 86% !important;
+        }
     }
 
     .left-panel,.right-panel{
@@ -193,12 +276,28 @@
         h1 {
             margin-bottom: 2em;
         }
+        margin-bottom: 0;
         .abc{
             display: inline-block;
             margin-bottom: 4em;
             &:last-child{
                 
                 float: none;
+            }
+        }
+    }
+    .subscription{
+        .join{
+            .join-button{
+                &:after,&:before{
+                    width: 40%;
+                }
+                &:after{
+                    left: 150px;
+                }
+                &:before{
+                    right: 150px;
+                }
             }
         }
     }
@@ -212,22 +311,22 @@
                 > div {
                     width: 100%;
                     padding: 0 3em;
-                    > div{
-                        .box-shadow {
-                            > div{
-                                &:last-child{
-                                    ul{
-                                        li{
+                    // > div{
+                    //     .box-shadow {
+                    //         > div{
+                    //             &:last-child{
+                    //                 ul{
+                    //                     li{
                                         
-                                            &::before{
+                    //                         &::before{
                                                 
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }   
+                    //                         }
+                    //                     }
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }   
                 }
             }
         }
@@ -252,11 +351,9 @@
     /* .dashboard-img{
         display: none;
     }} */
-    .get-started{
-        padding: 14.5em 0 12em 0 !important;
-    }
-    
-
+    // .get-started{
+    //     padding: 14.5em 0 12em 0 !important;
+    // }
     
     .work{
         > div{
@@ -285,7 +382,7 @@
     }
 
     .drag-right{
-        padding: 2em !important;
+        padding: 2em 1em 0 1em !important;
     }
 
     .drag-content1{
@@ -304,20 +401,20 @@
         margin-left: auto;
         margin-right: auto;
     }    
-
-    .join{
-        width: 100%;
+    .subscription{
+        .join{
+            .join-button{
+                padding: 0.2em 1.8em;
+                &:after{
+                    left: 130px;
+                }
+                &:before{
+                    right: 130px;
+                }
+            }
+        }
     }
-    .join-button-wrapper{
-        width: 46%;
-    }
-    .left-line{
-        width: 22%;
-    }
-
-    .right-line{
-        width: 22%;
-    }
+    
 }
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
