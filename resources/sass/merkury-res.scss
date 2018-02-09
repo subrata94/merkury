@@ -1,10 +1,9 @@
 @media screen and (max-width: 1200px){
     .work{
-        > div{
-            > div {
+        .work-row {
                 padding: 12em 7em 3em 7em;
             }
-        }
+        
     }
     .pricing{
         > div{
@@ -58,11 +57,6 @@
         }
     }
 }
-@media screen and (max-width: 1100px){
-    // .grupa-img{
-    //     right: -3em !important;
-    // }
-}
 @media screen and (max-width: 1000px){
     .drag-n-drop-bg{
         .drag-left {
@@ -75,11 +69,10 @@
         }
     }
     .work{
-        > div{
-            > div {
+        .work-row {
                 padding: 9em 2em 4.5em 2em;
             }
-        }
+        
     }
 
     .logo-line:after{
@@ -236,8 +229,7 @@
     }
 
     .work{
-        > div{
-            > div {
+        .work-row{
                 margin-bottom: 0;
                 padding: 6em 0 1em 0;
                 > div {
@@ -245,7 +237,6 @@
                     &:last-child{
                         float: none;
                         display: inline-block;
-                        //transform: translateX(-50%);
                     }
                     &:nth-child(1),&:nth-child(2){
                         &:after{
@@ -254,7 +245,7 @@
                     }
                 }
             }
-        }
+        
     }
 
     .info{
@@ -288,11 +279,27 @@
         .mockup{
             width: 86% !important;
         }
+        .left-panel,.right-panel{
+            display: none;
+        }
+        .dis-no{
+            color: $text-blue;
+            display: block !important;
+            h4{
+                font-weight: 300;
+            }
+            p{
+                font-size: 13px;
+                color: grey;
+                font-weight: 300;
+            }
+        }
+        .lst{
+            margin-bottom: 2em;
+        }
     }
 
-    .left-panel,.right-panel{
-        display: none;
-    }
+    
 
     .join-button-wrapper{
         width: 23%;
@@ -330,34 +337,6 @@
     
     
 }
-@media screen and (max-width: 520px){
-    .pricing{
-        > div{
-            > div {
-                > div {
-                    width: 100%;
-                    padding: 0 3em;
-                    // > div{
-                    //     .box-shadow {
-                    //         > div{
-                    //             &:last-child{
-                    //                 ul{
-                    //                     li{
-                                        
-                    //                         &::before{
-                                                
-                    //                         }
-                    //                     }
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }   
-                }
-            }
-        }
-    }
-}
 @media only screen and (max-width: 419px) {
     .ham-nav{
         display: block !important;
@@ -374,12 +353,6 @@
         animation-direction: alternate;
         animation-fill-mode: forwards;
     }
-    /* .dashboard-img{
-        display: none;
-    }} */
-    // .get-started{
-    //     padding: 14.5em 0 12em 0 !important;
-    // }
     
     .work{
         > div{
@@ -438,6 +411,11 @@
                     right: 130px;
                 }
             }
+        }
+    }
+    .psd-template{
+        .dis-no{
+            width: 100%;
         }
     }
     

@@ -1,266 +1,97 @@
-@media screen and (max-width: 1200px) {
-  .work > div > div {
-    padding: 12em 7em 3em 7em; }
+/*
+Error: Undefined variable: "$text-blue".
+        on line 286 of sass/merkury-res.scss
 
-  .pricing > div > div {
-    padding: 0; }
-    .pricing > div > div h1 {
-      margin-bottom: 0.5em; }
+281:         }
+282:         .left-panel,.right-panel{
+283:             display: none;
+284:         }
+285:         .dis-no{
+286:             color: $text-blue;
+287:             display: block !important;
+288:             h4{
+289:                 font-weight: 300;
+290:             }
+291:             p{
 
-  .grupa-img {
-    right: -18em !important;
-    width: 51em !important; }
-
-  .psd-template > div > div .left-panel {
-    left: 5%;
-    top: 45%; }
-    .psd-template > div > div .left-panel hr {
-      margin-bottom: 14px; }
-    .psd-template > div > div .left-panel .line-left {
-      width: 91% !important; }
-    .psd-template > div > div .left-panel .outer-circle {
-      top: 21% !important;
-      left: 85% !important; }
-  .psd-template > div > div .right-panel {
-    bottom: 12%;
-    right: 5%; }
-    .psd-template > div > div .right-panel hr {
-      margin-bottom: 14px; }
-    .psd-template > div > div .right-panel .line-right {
-      width: 84% !important; }
-    .psd-template > div > div .right-panel .outer-circle {
-      top: 21% !important;
-      left: 14% !important; }
-  .psd-template > div > div .right-content, .psd-template > div > div .left-content {
-    font-size: 13px; }
-  .psd-template > div > div .mockup {
-    width: 62%; } }
-@media screen and (max-width: 1000px) {
-  .drag-n-drop-bg .drag-left .drag-contents {
-    padding: 0 !important; }
-  .drag-n-drop-bg .drag-right {
-    padding: 0 0 0 3em; }
-
-  .work > div > div {
-    padding: 9em 2em 4.5em 2em; }
-
-  .logo-line:after {
-    border: none !important; } }
-@media screen and (max-width: 991px) {
-  .dashboard .get-started {
-    padding: 11em 0 15em 0 !important; }
-
-  .drag-n-drop-bg {
-    padding: 4em 0; }
-    .drag-n-drop-bg .drag-right {
-      padding: 0 15px;
-      margin-bottom: 0; }
-
-  .work > div > div {
-    padding-bottom: 0; }
-
-  .pricing {
-    margin-bottom: 2em; }
-    .pricing > div > div h1 {
-      margin-bottom: 1em; }
-    .pricing > div > div > div > div {
-      padding: 0; }
-
-  .grupa-img {
-    top: 0em !important;
-    width: 54em !important;
-    right: -26em !important; }
-
-  .psd-template > div > div .fst {
-    margin-bottom: 7px !important; }
-  .psd-template > div > div .left-panel {
-    top: 54%;
-    left: 0; }
-    .psd-template > div > div .left-panel hr {
-      margin-top: 6px;
-      margin-bottom: 14px; }
-    .psd-template > div > div .left-panel .line-left {
-      width: 100% !important; }
-    .psd-template > div > div .left-panel .outer-circle {
-      left: 91% !important; }
-  .psd-template > div > div .right-panel {
-    bottom: 11%;
-    right: 0; }
-    .psd-template > div > div .right-panel hr {
-      margin-top: 6px;
-      margin-bottom: 14px; }
-    .psd-template > div > div .right-panel .line-right {
-      width: 96% !important; }
-    .psd-template > div > div .right-panel .outer-circle {
-      left: 5% !important; }
-  .psd-template > div > div .rp-title {
-    font-size: 15px; }
-  .psd-template > div > div .right-content, .psd-template > div > div .left-content {
-    font-size: 9px; }
-  .psd-template > div > div .mockup {
-    width: 62%; } }
-@media screen and (max-width: 900px) {
-  .grupa-img {
-    top: 4em !important;
-    right: -16em !important;
-    width: 46em !important; } }
-@media screen and (max-width: 768px) {
-  .dashboard .get-started {
-    padding: 10em 0 6em 0 !important; }
-
-  .footer {
-    text-align: center; }
-    .footer div > div:last-child {
-      margin-top: 0.5em; }
-      .footer div > div:last-child ul {
-        float: none; }
-
-  .ham {
-    display: block !important;
-    color: white;
-    font-size: 30px;
-    cursor: pointer; }
-
-  .ham:hover {
-    color: aqua;
-    transition-delay: 0.1s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards; }
-
-  .dashboard .dashboard-img {
-    display: none !important; }
-
-  .drag-n-drop-bg .dgd-p {
-    margin: 0 auto;
-    width: 100% !important; }
-
-  .header > div > ul {
-    display: none; }
-
-  .work > div > div {
-    margin-bottom: 0;
-    padding: 6em 0 1em 0; }
-    .work > div > div > div {
-      margin-bottom: 3em; }
-      .work > div > div > div:last-child {
-        float: none;
-        display: inline-block; }
-      .work > div > div > div:nth-child(1):after, .work > div > div > div:nth-child(2):after {
-        content: none; }
-
-  .info {
-    padding: 3.5em 0 5em 0; }
-    .info .info-d p {
-      width: 100% !important;
-      padding-right: 15px; }
-    .info .grupa-img {
-      display: none; }
-
-  .drag-right, .drag-left {
-    width: 100% !important;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .drag-right {
-    text-align: center;
-    padding: 0 5em; }
-
-  .drag-left .container-fluid {
-    padding: 0; }
-
-  .psd-template .mockup {
-    width: 86% !important; }
-
-  .left-panel, .right-panel {
-    display: none; }
-
-  .join-button-wrapper {
-    width: 23%; }
-
-  .pricing {
-    margin-bottom: 0; }
-    .pricing h1 {
-      margin-bottom: 2em; }
-    .pricing .abc {
-      display: inline-block;
-      margin-bottom: 4em; }
-      .pricing .abc:last-child {
-        float: none; }
-
-  .subscription .join .join-button:after, .subscription .join .join-button:before {
-    width: 40%; }
-  .subscription .join .join-button:after {
-    left: 150px; }
-  .subscription .join .join-button:before {
-    right: 150px; } }
-@media screen and (max-width: 520px) {
-  .pricing > div > div > div {
-    width: 100%;
-    padding: 0 3em; } }
-@media only screen and (max-width: 419px) {
-  .ham-nav {
-    display: block !important; }
-
-  .ham {
-    display: block !important;
-    color: white;
-    font-size: 30px;
-    cursor: pointer; }
-
-  .ham:hover {
-    color: aqua;
-    transition-delay: 0.1s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards; }
-
-  /* .dashboard-img{
-      display: none;
-  }} */
-  .work > div > div {
-    padding: 4em 2.5em 1.5em 2.5em !important; }
-    .work > div > div > div {
-      margin-bottom: 3em;
-      width: 100% !important; }
-      .work > div > div > div:last-child {
-        left: 0;
-        transform: unset; }
-      .work > div > div > div:after {
-        content: none !important; }
-
-  .drag-right, .drag-left {
-    width: 100% !important;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .drag-right {
-    padding: 2em 1em 0 1em !important; }
-
-  .drag-content1 {
-    width: 100% !important;
-    margin-bottom: 2em; }
-
-  .drag-content2 {
-    width: 100% !important; }
-
-  .drag-right {
-    text-align: center; }
-
-  .drag-contents {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .subscription .join .join-button {
-    padding: 0.2em 1.8em; }
-    .subscription .join .join-button:after {
-      left: 130px; }
-    .subscription .join .join-button:before {
-      right: 130px; } }
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-
-  .sidenav a {
-    font-size: 18px; } }
-
-/*# sourceMappingURL=merkury-res.css.map */
+Backtrace:
+sass/merkury-res.scss:286
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$text-blue\".\A         on line 286 of sass/merkury-res.scss\A \A 281:         }\A 282:         .left-panel,.right-panel{\A 283:             display: none;\A 284:         }\A 285:         .dis-no{\A 286:             color: $text-blue;\A 287:             display: block !important;\A 288:             h4{\A 289:                 font-weight: 300;\A 290:             }\A 291:             p{"; }

@@ -7,7 +7,6 @@
     <link rel='shortcut icon' type='image/x-icon' href='../resources/images/favicon.ico' />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury-res.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
 </head>
@@ -54,13 +53,13 @@
     </div>
     <div class="work">
         <div class="container">
-            <div class="row">
+            <div class="row work-row">
                 <div class="col-sm-4 col-xs-6 text-center">
                     <div class="logo-line">
                         <img src="../resources/images/lg1.png" class="img-responsive hvr-float-shadow" alt="logo1">
                     </div>
                     <div>Manage Your Workflow</div>
-                    <div class="text-break font-size-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
+                    <div class="work-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
                     <button class="see-more-btn">See more</button>
                 </div>
                 <div class="col-sm-4 col-xs-6 text-center">
@@ -68,7 +67,7 @@
                         <img src="../resources/images/lg2.png" class="img-responsive hvr-float-shadow" alt="logo2">
                     </div>
                     <div>Analytics & Insights</div>
-                    <div class="text-break font-size-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
+                    <div class="work-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
                     <button class="see-more-btn">See more</button>
                 </div>
                 <div class="col-sm-4 col-xs-6 text-center">
@@ -76,7 +75,7 @@
                         <img src="../resources/images/lg3.png" class="img-responsive hvr-float-shadow" alt="logo3">
                     </div>
                     <div>Organize Your Deadlines</div>
-                    <div class="text-break font-size-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
+                    <div class="work-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
                     <button class="see-more-btn">See more</button>
                 </div>
             </div>
@@ -119,21 +118,21 @@
                             <div id="tasks1" class="tasks" draggable="true">
                                 <div class="initials">N</div>
                                 <div class="pending">
-                                    <div class="bold-5">Title</div>
+                                    <div>Title</div>
                                     <div><span class="glyphicon glyphicon-time"></span> time</div>
                                 </div>
                             </div>
                             <div id="tasks2" class="tasks" draggable="true">
                                 <div class="initials">N</div>
                                 <div class="pending">
-                                    <div class="bold-5">Title</div>
+                                    <div>Title</div>
                                     <div><span class="glyphicon glyphicon-time"></span> time</div>
                                 </div>
                             </div>
                             <div id="tasks3" class="tasks" draggable="true">
                                 <div class="initials">N</div>
                                 <div class="pending">
-                                    <div class="bold-5">Title</div>
+                                    <div>Title</div>
                                     <div><span class="glyphicon glyphicon-time"></span> time</div>
                                 </div>
                             </div>
@@ -143,7 +142,7 @@
                             <div class="completed">
                                 <div class="initials">N</div>
                                 <div class="pending">
-                                    <div class="bold-5">Title</div>
+                                    <div>Title</div>
                                     <div class="text-green"><span class="glyphicon glyphicon-ok-circle"></span> completed</div>
                                 </div>
                                 <span class="glyphicon glyphicon-option-vertical"></span>
@@ -151,7 +150,7 @@
                             <div class="completed">
                                 <div class="initials">N</div>
                                 <div class="pending">
-                                    <div class="bold-5">Title</div>
+                                    <div>Title</div>
                                     <div class="text-green"><span class="glyphicon glyphicon-ok-circle"></span> Completed</div>
                                 </div>
                                 <span class="glyphicon glyphicon-option-vertical"></span>
@@ -188,7 +187,7 @@
                     </div>
                 </div>
                 
-                <div class="dgd-span col-sm-7 no-padding-h font-size-28">
+                <div class="dgd-span">
                     <span class="fa fa-chevron-circle-left slider-left"></span>&nbsp;&nbsp;
                     <span class="fa fa-chevron-circle-right slider-right"></span>
                 </div>
@@ -207,13 +206,20 @@
                 <div class="mockup">
                     <img src="../resources/images/mockup.png" class="img-responsive" alt="mockup">
                 </div>
-        
+                <div class="text-center col-xs-6 dis-no">
+                    <h4>Clean & modern layout</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="col-xs-6 text-center dis-no lst">
+                    <h4>Easy to customized</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
                 <div class="left-panel">
                     <div class="col-sm-12 text-left">
                         <div class="rp-title">Clean & modern layout</div>
                         <div class="line-left">
                             <hr>
-                            <div class="outer-circle right-0">
+                            <div class="outer-circle">
                                 <div class="inner-circle"></div>
                             </div>
                         </div>
@@ -357,63 +363,6 @@
 
     <script src="../resources/js/jquery.min.js"></script>
     <script src="../resources/js/bootstrap.min.js"></script>
-    <script>
-
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-        function openNav() {document.getElementById("mySidenav").style.width = "250px";}
-        function closeNav() {document.getElementById("mySidenav").style.width = "0";}
-
-        $(function(){
-            var id,
-                slider=1,
-                p_count=3,
-                c_count=2;
-            $('#myBtn').on('click',function(){
-                $('.dashboard').get(0).scrollIntoView({ behavior: 'smooth' });
-            });
-            $('.tasks').on('dragstart',function(ev){
-                id = '#'+ev.target.id;
-            });
-            $('#drp').on('dragover',function(ev){
-                ev.preventDefault();
-            });
-            $('#drp').on('drop',function(ev){
-                ev.preventDefault();
-                $(id+' .pending div:last-child').addClass("text-green");
-                $(id+' .pending div:last-child').html("<span class=\"glyphicon glyphicon-ok-circle\"></span> Completed");
-                var html = "<div class=\"completed\">"+$(id).html()+"</div>";
-                $(id).hide();
-                $(this).before(html);
-                // $('.drag-n-drop-bg').height($('.drag-n-drop-bg').height() + $(id).height());
-                $('.p-count').text('('+(--p_count)+')');
-                $('.c-count').text('('+(++c_count)+')');
-            });
-            $('.slider-left').on('click',function(){
-                if(slider != 1){
-                    $('.dgd-content'+slider).fadeOut(1).delay(500);
-                    slider--;
-                    $('.dgd-content'+slider).fadeIn('slow');
-                }
-            });
-            $('.slider-right').on('click',function(){
-                if(slider != 2){
-                    $('.dgd-content'+slider).fadeOut(1).delay(300);
-                    slider++;
-                    $('.dgd-content'+slider).removeClass("hide").fadeIn('slow');
-                }
-            });
-
-            $('.completed::after').on('click',function(){
-                alert("hello");
-            });
-        });    
-    </script>
+    <script src="../resources/js/merkury.js"></script>
 </body>
 </html>
