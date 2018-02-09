@@ -253,39 +253,40 @@ button:active {
     margin-left: 4%; }
 
 .info {
-  position: relative;
   padding: 5em 0 7.5em 0;
   overflow: hidden;
   background: linear-gradient(white, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa); }
-  .info div {
+  .info .info-container {
+    position: relative; }
+  .info .info-row {
     padding-right: 0; }
-    .info div .info-d {
+    .info .info-row .info-d {
       padding-right: 15px; }
-      .info div .info-d h1 {
+      .info .info-row .info-d h1 {
         margin-bottom: 1em;
         font-weight: 300; }
-      .info div .info-d p {
+      .info .info-row .info-d p {
         width: 90%;
         margin-bottom: 2em; }
-        .info div .info-d p:nth-child(2) {
+        .info .info-row .info-d p:nth-child(2) {
           color: #8492af;
           font-size: 12px; }
-        .info div .info-d p:nth-child(3) {
+        .info .info-row .info-d p:nth-child(3) {
           color: #8492af;
           font-size: 12px; }
-      .info div .info-d .margin-bottom {
+      .info .info-row .info-d .margin-bottom {
         margin-bottom: 1em; }
-      .info div .info-d div * {
+      .info .info-row .info-d div * {
         display: inline;
         color: #8492af; }
-      .info div .info-d div span {
+      .info .info-row .info-d div span {
         font-size: 20px;
         vertical-align: -2px; }
   .info .grupa-img {
     position: absolute;
-    top: 2em;
-    right: 0;
-    width: 47em; }
+    top: -2em;
+    right: -12em;
+    width: 54.5em; }
 
 .drag-n-drop-bg {
   background-image: url("../images/drag.png");

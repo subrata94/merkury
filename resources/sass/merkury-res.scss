@@ -17,41 +17,51 @@
         }
     }
     .grupa-img{
-        top: 4em !important;
-        right: -2em !important;
-        width: 40em !important;
+        right: -18em !important;
+        width: 51em !important;
     }
     .psd-template > div > div{
         .left-panel{
+            left: 5%;
             top: 45%;
             hr{
                 margin-bottom: 14px;
             }
             .line-left{
-                width: 74% !important;
+                width: 91% !important;
+            }
+            .outer-circle {
+                top: 21% !important;
+                left: 85% !important;
             }
         }
         .right-panel {
             bottom: 12%;
+            right: 5%;
             hr{
                 margin-bottom: 14px;
             }
+            .line-right{
+                width: 84% !important;
+            }
+            .outer-circle {
+                top: 21% !important;
+                left: 14% !important;
+            }
         }
         .right-content, .left-content{
-            font-size: 10px;
+            font-size: 13px;
         }
-        .outer-circle {
-            top: 21% !important;
-        }
+        
         .mockup{
             width: 62%;
         }
     }
 }
 @media screen and (max-width: 1100px){
-    .grupa-img{
-        right: -3em !important;
-    }
+    // .grupa-img{
+    //     right: -3em !important;
+    // }
 }
 @media screen and (max-width: 1000px){
     .drag-n-drop-bg{
@@ -118,9 +128,9 @@
         }
     }
     .grupa-img{
-        top: 4em !important;
-        width: 45em !important;
-        right: -11em !important;
+        top: 0em !important;
+        width: 54em !important;
+        right: -26em !important;
     }
 
     .psd-template{ 
@@ -130,17 +140,34 @@
                     margin-bottom: 7px !important;
                 }
                 .left-panel{
-                    top: 52%;
+                    top: 54%;
+                    left: 0;
                     hr{
                         margin-top: 6px;
                         margin-bottom: 14px;
                     }
+                    .line-left{
+                        width: 100% !important;
+                    }
+                    .outer-circle {
+                        //top: 21% !important;
+                        left: 91% !important;
+                    }
+                    
                 }
                 .right-panel {
                     bottom: 11%;
+                    right: 0;
                     hr{
                         margin-top: 6px;
                         margin-bottom: 14px;
+                    }
+                    .line-right{
+                        width: 96% !important; 
+                    }
+                    .outer-circle {
+                        //top: 21% !important;
+                        left: 5% !important;
                     }
                 }
                 .rp-title{
@@ -198,7 +225,6 @@
         }
     }
     .drag-n-drop-bg{
-        
         .dgd-p{
             margin: 0 auto;
             width: 100% !important;
@@ -213,7 +239,7 @@
         > div{
             > div {
                 margin-bottom: 0;
-                padding: 6em 6em 1em 6em;
+                padding: 6em 0 1em 0;
                 > div {
                     margin-bottom: 3em;
                     &:last-child{

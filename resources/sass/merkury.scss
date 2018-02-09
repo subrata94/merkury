@@ -320,12 +320,14 @@ button:active{
     }
 }
 .info{
-    position: relative;
     padding: 5em 0 7.5em 0;
     overflow: hidden;
     background: linear-gradient(white,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,
     #f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa);
-    div{
+    .info-container{
+        position: relative;
+    }
+    .info-row{
         padding-right: 0;
         .info-d{
             padding-right: 15px;
@@ -360,9 +362,9 @@ button:active{
     }
     .grupa-img{
         position: absolute;
-        top: 2em;
-        right: 0;
-        width: 47em;
+        top: -2em;
+        right: -12em;
+        width: 54.5em;
     }
 }
 .drag-n-drop-bg{

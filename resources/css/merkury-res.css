@@ -8,29 +8,33 @@
       margin-bottom: 0.5em; }
 
   .grupa-img {
-    top: 4em !important;
-    right: -2em !important;
-    width: 40em !important; }
+    right: -18em !important;
+    width: 51em !important; }
 
   .psd-template > div > div .left-panel {
+    left: 5%;
     top: 45%; }
     .psd-template > div > div .left-panel hr {
       margin-bottom: 14px; }
     .psd-template > div > div .left-panel .line-left {
-      width: 74% !important; }
+      width: 91% !important; }
+    .psd-template > div > div .left-panel .outer-circle {
+      top: 21% !important;
+      left: 85% !important; }
   .psd-template > div > div .right-panel {
-    bottom: 12%; }
+    bottom: 12%;
+    right: 5%; }
     .psd-template > div > div .right-panel hr {
       margin-bottom: 14px; }
+    .psd-template > div > div .right-panel .line-right {
+      width: 84% !important; }
+    .psd-template > div > div .right-panel .outer-circle {
+      top: 21% !important;
+      left: 14% !important; }
   .psd-template > div > div .right-content, .psd-template > div > div .left-content {
-    font-size: 10px; }
-  .psd-template > div > div .outer-circle {
-    top: 21% !important; }
+    font-size: 13px; }
   .psd-template > div > div .mockup {
     width: 62%; } }
-@media screen and (max-width: 1100px) {
-  .grupa-img {
-    right: -3em !important; } }
 @media screen and (max-width: 1000px) {
   .drag-n-drop-bg .drag-left .drag-contents {
     padding: 0 !important; }
@@ -63,22 +67,32 @@
       padding: 0; }
 
   .grupa-img {
-    top: 4em !important;
-    width: 45em !important;
-    right: -11em !important; }
+    top: 0em !important;
+    width: 54em !important;
+    right: -26em !important; }
 
   .psd-template > div > div .fst {
     margin-bottom: 7px !important; }
   .psd-template > div > div .left-panel {
-    top: 52%; }
+    top: 54%;
+    left: 0; }
     .psd-template > div > div .left-panel hr {
       margin-top: 6px;
       margin-bottom: 14px; }
+    .psd-template > div > div .left-panel .line-left {
+      width: 100% !important; }
+    .psd-template > div > div .left-panel .outer-circle {
+      left: 91% !important; }
   .psd-template > div > div .right-panel {
-    bottom: 11%; }
+    bottom: 11%;
+    right: 0; }
     .psd-template > div > div .right-panel hr {
       margin-top: 6px;
       margin-bottom: 14px; }
+    .psd-template > div > div .right-panel .line-right {
+      width: 96% !important; }
+    .psd-template > div > div .right-panel .outer-circle {
+      left: 5% !important; }
   .psd-template > div > div .rp-title {
     font-size: 15px; }
   .psd-template > div > div .right-content, .psd-template > div > div .left-content {
@@ -125,7 +139,7 @@
 
   .work > div > div {
     margin-bottom: 0;
-    padding: 6em 6em 1em 6em; }
+    padding: 6em 0 1em 0; }
     .work > div > div > div {
       margin-bottom: 3em; }
       .work > div > div > div:last-child {
