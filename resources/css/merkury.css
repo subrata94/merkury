@@ -249,19 +249,18 @@ button:active {
           display: inline-block; }
           .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks .option div:first-child, .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed .option div:first-child, .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks .initials div:first-child, .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed .initials div:first-child, .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks .pending div:first-child, .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed .pending div:first-child {
             font-weight: 500; }
-      .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks:after {
-        content: "\e235";
+      .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks > span {
         position: absolute;
-        top: 1px;
         right: 8px;
-        font-family: 'Glyphicons Halflings';
-        -webkit-font-smoothing: antialiased;
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -o-transform: translateY(-50%); }
+        .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks > span:hover {
+          cursor: pointer;
+          color: gray; }
       .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed > span {
         position: absolute;
         right: 8px;
@@ -505,7 +504,7 @@ button:active {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #5f5e5eea;
+  background-color: rgba(70, 69, 69, 0.884);
   color: white;
   cursor: pointer;
   width: 2em;

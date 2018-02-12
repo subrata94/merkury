@@ -291,16 +291,28 @@
                 .drag-content1{
                     .tasks{
                         @extend %content;
-                        &:after{
-                            content: "\e235";
+                        // &:after{
+                        //     content: "\e235";
+                        //     position: absolute;
+                        //     top: 1px;
+                        //     right: 8px;
+                        //     font-family: 'Glyphicons Halflings';
+                        //     -webkit-font-smoothing: antialiased;
+                        //     top: 50%;
+                        //     transform: translateY(-50%);
+                        //     @include translate-y(-50%);
+                        // }
+                        > span {
                             position: absolute;
-                            top: 1px;
                             right: 8px;
-                            font-family: 'Glyphicons Halflings';
-                            -webkit-font-smoothing: antialiased;
                             top: 50%;
                             transform: translateY(-50%);
                             @include translate-y(-50%);
+                            &:hover{
+                                cursor: pointer;
+                                color: gray;
+                            }
+                            
                         }
                     }
                 }
@@ -668,7 +680,7 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #5f5e5eea;
+    background-color: rgba(70, 69, 69, 0.884);
     color: white;
     cursor: pointer;
     width: 2em;
