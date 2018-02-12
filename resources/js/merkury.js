@@ -25,8 +25,6 @@ $(function(){
     });
     $('#drp').on('drop',function(ev){
         ev.preventDefault();
-        var s = $(id).html();
-        alert(s);
         $(id+' .pending div:last-child').addClass("text-green");
         $(id+' .pending div:last-child').html("<span class=\"glyphicon glyphicon-ok-circle\"></span> Completed");
         var html = "<div class=\"completed\">"+$(id).html()+"</div>";
