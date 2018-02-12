@@ -121,6 +121,10 @@ button:active {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
       bottom: -70px; }
 
 .work .work-row {
@@ -253,12 +257,20 @@ button:active {
         font-family: 'Glyphicons Halflings';
         -webkit-font-smoothing: antialiased;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%); }
       .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed > span {
         position: absolute;
         right: 8px;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%); }
         .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed > span:hover {
           cursor: pointer;
           color: gray; }
@@ -269,7 +281,11 @@ button:active {
         text-align: center;
         height: 61px; }
         .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .doted-outline div {
-          transform: translateY(100%); }
+          transform: translateY(100%);
+          -webkit-transform: translateY(100%);
+          -ms-transform: translateY(100%);
+          -moz-transform: translateY(100%);
+          -o-transform: translateY(100%); }
   .drag-n-drop-bg div .drag-right {
     width: 43%;
     float: left; }
@@ -331,7 +347,11 @@ button:active {
         background-color: #5584ff;
         margin-right: auto;
         margin-left: auto;
-        transform: translateY(20%); }
+        transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        -moz-transform: translateY(20%);
+        -o-transform: translateY(20%); }
     .psd-template > div > div .left-panel {
       left: 12%;
       top: 42%; }

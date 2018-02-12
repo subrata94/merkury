@@ -31,6 +31,21 @@ button:active{
     border: $bd solid $bdc;
     border-radius: $rad;
 }
+
+@mixin translate-x($val){
+    -webkit-transform: translateX($val);
+    -ms-transform: translateX($val);
+    -moz-transform: translateX($val);
+    -o-transform: translateX($val);
+}
+
+@mixin translate-y($val){
+    -webkit-transform: translateY($val);
+    -ms-transform: translateY($val);
+    -moz-transform: translateY($val);
+    -o-transform: translateY($val);
+}
+
 .bold-3{
     font-weight: 300;
 }
