@@ -1,0 +1,261 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+button:focus,
+button:active {
+  outline: 0 !important; }
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 37px 5px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 37px 5px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 37px 5px rgba(0, 0, 0, 0.33); }
+
+.bold-3 {
+  font-weight: 300; }
+
+.text-green {
+  color: #1ec973; }
+
+[draggable=true] {
+  -khtml-user-drag: element;
+  -moz-user-drag: element; }
+
+@media screen and (max-width: 1200px) {
+  .work .work-row {
+    padding: 12em 7em 3em 7em; }
+
+  .pricing .pricing-row {
+    padding: 0; }
+    .pricing .pricing-row h1 {
+      margin-bottom: 0.5em; }
+
+  .grupa-img {
+    right: -18em !important;
+    width: 51em !important; }
+
+  .psd-template .psd-row .left-panel {
+    left: 5%;
+    top: 45%; }
+    .psd-template .psd-row .left-panel hr {
+      margin-bottom: 14px; }
+    .psd-template .psd-row .left-panel .line-left {
+      width: 91% !important; }
+    .psd-template .psd-row .left-panel .outer-circle {
+      top: 21% !important;
+      left: 85% !important; }
+  .psd-template .psd-row .right-panel {
+    bottom: 12%;
+    right: 5%; }
+    .psd-template .psd-row .right-panel hr {
+      margin-bottom: 14px; }
+    .psd-template .psd-row .right-panel .line-right {
+      width: 84% !important; }
+    .psd-template .psd-row .right-panel .outer-circle {
+      top: 21% !important;
+      left: 14% !important; }
+  .psd-template .psd-row .right-content, .psd-template .psd-row .left-content {
+    font-size: 13px; }
+  .psd-template .psd-row .mockup {
+    width: 62%; } }
+@media screen and (max-width: 992px) {
+  .dashboard .get-started {
+    padding: 11em 0 15em 0 !important; }
+
+  .drag-n-drop-bg {
+    padding: 4em 0; }
+    .drag-n-drop-bg .drag-left .drag-contents {
+      padding: 0 !important; }
+    .drag-n-drop-bg .drag-right {
+      padding: 0 15px;
+      margin-bottom: 0; }
+
+  .work .work-row {
+    padding: 9em 2em 4.5em 2em; }
+    .work .work-row .workflow:after, .work .work-row .analytics:after {
+      top: 7.5%;
+      margin-left: -5px; }
+
+  .pricing {
+    margin-bottom: 2em; }
+    .pricing .pricing-row h1 {
+      margin-bottom: 1em; }
+    .pricing .pricing-row .price-box {
+      padding: 0; }
+    .pricing .pricing-row .bronze, .pricing .pricing-row .silver, .pricing .pricing-row .gold {
+      padding: 1em 1em; }
+
+  .grupa-img {
+    top: 0em !important;
+    width: 54em !important;
+    right: -26em !important; }
+
+  .psd-template .psd-row .fst {
+    margin-bottom: 7px !important; }
+  .psd-template .psd-row .left-panel {
+    top: 52%;
+    left: 0; }
+    .psd-template .psd-row .left-panel hr {
+      margin-top: 6px;
+      margin-bottom: 14px; }
+    .psd-template .psd-row .left-panel .line-left {
+      width: 100% !important; }
+    .psd-template .psd-row .left-panel .outer-circle {
+      left: 91% !important; }
+  .psd-template .psd-row .right-panel {
+    bottom: 10%;
+    right: 0; }
+    .psd-template .psd-row .right-panel hr {
+      margin-top: 6px;
+      margin-bottom: 14px; }
+    .psd-template .psd-row .right-panel .line-right {
+      width: 96% !important; }
+    .psd-template .psd-row .right-panel .outer-circle {
+      left: 5% !important; }
+  .psd-template .rp-title {
+    font-size: 15px; }
+  .psd-template .right-content, .psd-template .left-content {
+    font-size: 9px; }
+  .psd-template .mockup {
+    width: 62%; } }
+@media screen and (max-width: 768px) {
+  .dashboard .get-started {
+    padding: 10em 0 6em 0 !important; }
+  .dashboard .dashboard-img {
+    display: none !important; }
+
+  .footer {
+    text-align: center; }
+    .footer .footer-nav {
+      margin-top: 0.5em; }
+      .footer .footer-nav ul {
+        float: none; }
+
+  .header .header-content ul {
+    display: none; }
+  .header .ham {
+    display: block !important;
+    color: white;
+    font-size: 30px;
+    cursor: pointer; }
+    .header .ham:hover {
+      color: aqua;
+      transition-delay: 0.1s;
+      animation-direction: alternate;
+      animation-fill-mode: forwards; }
+
+  .work .work-row {
+    margin-bottom: 0;
+    padding: 6em 0 1em 0; }
+    .work .work-row .workflow, .work .work-row .analytics, .work .work-row .organize {
+      margin-bottom: 3em; }
+      .work .work-row .workflow:after, .work .work-row .analytics:after, .work .work-row .organize:after {
+        content: none; }
+    .work .work-row .organize {
+      float: none;
+      display: inline-block; }
+
+  .info {
+    padding: 3.5em 0 5em 0; }
+    .info .info-d p {
+      width: 100% !important;
+      padding-right: 15px; }
+    .info .grupa-img {
+      display: none; }
+
+  .drag-n-drop-bg .drag-right, .drag-n-drop-bg .drag-left {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto; }
+  .drag-n-drop-bg .drag-right {
+    text-align: center;
+    padding: 0 5em; }
+  .drag-n-drop-bg .drag-left .container-fluid {
+    padding: 0; }
+  .drag-n-drop-bg .dgd-p {
+    margin: 0 auto;
+    width: 100% !important; }
+
+  .psd-template .mockup {
+    width: 86% !important; }
+  .psd-template .left-panel, .psd-template .right-panel {
+    display: none; }
+  .psd-template .dis-no {
+    color: #8492af;
+    display: block !important; }
+    .psd-template .dis-no h4 {
+      font-weight: 300; }
+    .psd-template .dis-no p {
+      font-size: 13px;
+      color: grey;
+      font-weight: 300; }
+  .psd-template .lst {
+    margin-bottom: 2em; }
+
+  .pricing {
+    margin-bottom: 0; }
+    .pricing h1 {
+      margin-bottom: 2em; }
+    .pricing .bronze, .pricing .silver, .pricing .gold {
+      margin-bottom: 4em;
+      display: inline-block; }
+    .pricing .gold {
+      float: none; }
+
+  .subscription .join .join-button:after, .subscription .join .join-button:before {
+    width: 40%; }
+  .subscription .join .join-button:after {
+    left: 150px; }
+  .subscription .join .join-button:before {
+    right: 150px; } }
+@media only screen and (max-width: 480px) {
+  .work .work-row {
+    padding: 4em 2.5em 1.5em 2.5em; }
+    .work .work-row .workflow, .work .work-row .analytics, .work .work-row .organize {
+      margin-bottom: 3em;
+      width: 100%; }
+
+  .drag-n-drop-bg .drag-right, .drag-n-drop-bg .drag-left {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto; }
+  .drag-n-drop-bg .drag-right {
+    padding: 2em 1em 0 1em !important; }
+  .drag-n-drop-bg .drag-content1 {
+    width: 100% !important;
+    margin-bottom: 2em; }
+  .drag-n-drop-bg .drag-content2 {
+    width: 100% !important; }
+  .drag-n-drop-bg .drag-right {
+    text-align: center; }
+  .drag-n-drop-bg .drag-contents {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .pricing .bronze, .pricing .silver, .pricing .gold {
+    margin-bottom: 2em;
+    width: 100%; }
+
+  .subscription .join .join-button {
+    padding: 0.2em 1.8em; }
+    .subscription .join .join-button:after {
+      left: 130px; }
+    .subscription .join .join-button:before {
+      right: 130px; }
+
+  .psd-template .dis-no {
+    width: 100%; } }
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=merkury-res.css.map */

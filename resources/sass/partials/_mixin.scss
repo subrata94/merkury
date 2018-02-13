@@ -1,0 +1,35 @@
+@mixin button($padh,$padv,$bd,$rad,$color,$bdc,$bg){
+    padding: $padv $padh;
+    background: $bg;
+    color: $color;
+    border: $bd solid $bdc;
+    border-radius: $rad;
+}
+
+@mixin translate-x($val){
+    -webkit-transform: translateX($val);
+    -ms-transform: translateX($val);
+    -moz-transform: translateX($val);
+    -o-transform: translateX($val);
+}
+
+@mixin translate-y($val){
+    -webkit-transform: translateY($val);
+    -ms-transform: translateY($val);
+    -moz-transform: translateY($val);
+    -o-transform: translateY($val);
+}
+
+@mixin icon($color,$icon){
+    content: $icon;
+    position: absolute;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: $color;
+    font-size: 21px;
+    top: -5px;
+    left: 16px;
+}
