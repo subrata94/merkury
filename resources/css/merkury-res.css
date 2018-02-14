@@ -63,7 +63,7 @@ button:active {
     font-size: 13px; }
   .psd-template .psd-row .mockup {
     width: 62%; } }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .dashboard .get-started {
     padding: 11em 0 15em 0 !important; }
 
