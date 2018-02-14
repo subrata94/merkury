@@ -421,40 +421,38 @@ button:active {
         .pricing .pricing-row .bronze .box-shadow .offers, .pricing .pricing-row .silver .box-shadow .offers, .pricing .pricing-row .gold .box-shadow .offers {
           font-size: 12px;
           text-align: left; }
-          .pricing .pricing-row .bronze .box-shadow .offers .available, .pricing .pricing-row .silver .box-shadow .offers .available, .pricing .pricing-row .gold .box-shadow .offers .available {
-            line-height: 13px;
-            position: relative;
-            padding-left: 48px;
-            margin-bottom: 15px; }
-            .pricing .pricing-row .bronze .box-shadow .offers .available:before, .pricing .pricing-row .silver .box-shadow .offers .available:before, .pricing .pricing-row .gold .box-shadow .offers .available:before {
-              content: "";
-              position: absolute;
-              display: inline-block;
-              font-family: 'Glyphicons Halflings';
-              font-style: normal;
-              line-height: 1;
-              -webkit-font-smoothing: antialiased;
-              color: #5584ff;
-              font-size: 21px;
-              top: -5px;
-              left: 16px; }
-          .pricing .pricing-row .bronze .box-shadow .offers .unavailable, .pricing .pricing-row .silver .box-shadow .offers .unavailable, .pricing .pricing-row .gold .box-shadow .offers .unavailable {
-            line-height: 13px;
-            position: relative;
-            padding-left: 48px;
-            margin-bottom: 15px; }
-            .pricing .pricing-row .bronze .box-shadow .offers .unavailable:before, .pricing .pricing-row .silver .box-shadow .offers .unavailable:before, .pricing .pricing-row .gold .box-shadow .offers .unavailable:before {
-              content: "";
-              position: absolute;
-              display: inline-block;
-              font-family: 'Glyphicons Halflings';
-              font-style: normal;
-              line-height: 1;
-              -webkit-font-smoothing: antialiased;
-              color: #db3f3f;
-              font-size: 21px;
-              top: -5px;
-              left: 16px; }
+          .pricing .pricing-row .bronze .box-shadow .offers ul, .pricing .pricing-row .silver .box-shadow .offers ul, .pricing .pricing-row .gold .box-shadow .offers ul {
+            width: 16em;
+            margin: auto; }
+            .pricing .pricing-row .bronze .box-shadow .offers ul li, .pricing .pricing-row .silver .box-shadow .offers ul li, .pricing .pricing-row .gold .box-shadow .offers ul li {
+              line-height: 13px;
+              position: relative;
+              padding-left: 30px;
+              margin-bottom: 15px; }
+          .pricing .pricing-row .bronze .box-shadow .offers .available:before, .pricing .pricing-row .silver .box-shadow .offers .available:before, .pricing .pricing-row .gold .box-shadow .offers .available:before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            color: #5584ff;
+            font-size: 21px;
+            top: -5px;
+            left: 0; }
+          .pricing .pricing-row .bronze .box-shadow .offers .unavailable:before, .pricing .pricing-row .silver .box-shadow .offers .unavailable:before, .pricing .pricing-row .gold .box-shadow .offers .unavailable:before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            color: #db3f3f;
+            font-size: 21px;
+            top: -5px;
+            left: 0; }
 
 .subscription {
   padding: 1em 0 4em 0; }

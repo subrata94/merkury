@@ -533,20 +533,30 @@
                     .offers{
                         font-size: 12px;
                         text-align: left;
+                        ul{
+                            width: 16em;
+                            margin: auto;
+                            li{
+                                line-height: 13px;
+                                position: relative;
+                                padding-left: 30px;
+                                margin-bottom: 15px;
+                            }
+                        }
                         .available{
-                            line-height: 13px;
-                            position: relative;
-                            padding-left: 48px;
-                            margin-bottom: 15px;
+                            // line-height: 13px;
+                            // position: relative;
+                            // padding-left: 30px;
+                            // margin-bottom: 15px;
                             &:before{
                                 @include icon($button-blue,"\e088");
                             }
                         }
                         .unavailable{
-                            line-height: 13px;
-                            position: relative;
-                            padding-left: 48px;
-                            margin-bottom: 15px;
+                            // line-height: 13px;
+                            // position: relative;
+                            // padding-left: 30px;
+                            // margin-bottom: 15px;
                             &:before{
                                 @include icon($text-red,"\e088");
                             }
