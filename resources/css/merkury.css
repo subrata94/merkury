@@ -120,6 +120,7 @@ button:active {
         color: white;
         border: 1px solid #635eff; }
   .dashboard .dashboard-img {
+    overflow-y: hidden;
     width: 41%;
     position: absolute;
     left: 50%;
@@ -130,43 +131,46 @@ button:active {
     -o-transform: translateX(-50%);
     bottom: -70px; }
 
-.work .work-row {
-  text-align: center;
-  margin-bottom: 1.2em;
-  padding: 12em 10em 3em 10em; }
-  .work .work-row .workflow .work-logo, .work .work-row .analytics .work-logo, .work .work-row .organize .work-logo {
-    margin-bottom: 3.5em; }
-    .work .work-row .workflow .work-logo img, .work .work-row .analytics .work-logo img, .work .work-row .organize .work-logo img {
-      width: 19%; }
-  .work .work-row .workflow .work-title, .work .work-row .analytics .work-title, .work .work-row .organize .work-title {
-    margin-bottom: 0.8em;
-    font-weight: 500; }
-  .work .work-row .workflow .work-content, .work .work-row .analytics .work-content, .work .work-row .organize .work-content {
-    font-size: 12px;
-    margin-bottom: 3.5em;
-    color: #8492af;
-    font-weight: 400; }
-  .work .work-row .workflow .see-more-btn, .work .work-row .analytics .see-more-btn, .work .work-row .organize .see-more-btn {
-    background-color: transparent;
-    color: black;
-    border: 1px solid #8492af;
-    border-radius: 29px;
-    padding: 0.4rem 3.4rem 0.4rem 3.4rem;
-    font-weight: 300; }
-    .work .work-row .workflow .see-more-btn:hover, .work .work-row .analytics .see-more-btn:hover, .work .work-row .organize .see-more-btn:hover {
-      background-color: #5584ff;
-      border-color: transparent;
-      color: white;
+.work {
+  overflow: hidden; }
+  .work .work-row {
+    text-align: center;
+    margin-bottom: 1.2em;
+    padding: 12em 10em 3em 10em; }
+    .work .work-row .workflow .work-logo, .work .work-row .analytics .work-logo, .work .work-row .organize .work-logo {
+      margin-bottom: 3.5em; }
+      .work .work-row .workflow .work-logo img, .work .work-row .analytics .work-logo img, .work .work-row .organize .work-logo img {
+        width: 19%; }
+    .work .work-row .workflow .work-title, .work .work-row .analytics .work-title, .work .work-row .organize .work-title {
+      margin-bottom: 0.8em;
       font-weight: 500; }
-  .work .work-row .workflow:after, .work .work-row .analytics:after {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid lightgray;
-    top: 9%;
-    width: 48%;
-    margin-left: 4%; }
+    .work .work-row .workflow .work-content, .work .work-row .analytics .work-content, .work .work-row .organize .work-content {
+      font-size: 12px;
+      margin-bottom: 3.5em;
+      color: #8492af;
+      font-weight: 400; }
+    .work .work-row .workflow .see-more-btn, .work .work-row .analytics .see-more-btn, .work .work-row .organize .see-more-btn {
+      background-color: transparent;
+      color: black;
+      border: 1px solid #8492af;
+      border-radius: 29px;
+      padding: 0.4rem 3.4rem 0.4rem 3.4rem;
+      font-weight: 300; }
+      .work .work-row .workflow .see-more-btn:hover, .work .work-row .analytics .see-more-btn:hover, .work .work-row .organize .see-more-btn:hover {
+        background-color: #5584ff;
+        border-color: transparent;
+        color: white;
+        font-weight: 500; }
+    .work .work-row .workflow:after, .work .work-row .analytics:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid lightgray;
+      top: 9%;
+      width: 48%;
+      margin-left: 4%; }
 
 .info {
+  overflow: hidden;
   padding: 5em 0 7.5em 0;
   overflow: hidden;
   background: linear-gradient(white, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa); }
@@ -203,6 +207,7 @@ button:active {
     width: 54.5em; }
 
 .drag-n-drop-bg {
+  overflow: hidden;
   background-image: url("../images/drag.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -264,6 +269,8 @@ button:active {
         .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks > span:hover {
           cursor: pointer;
           color: gray; }
+      .drag-n-drop-bg div .drag-left .drag-contents .drag-content1 .tasks:hover {
+        cursor: url("../images/pointer.cur"), auto; }
       .drag-n-drop-bg div .drag-left .drag-contents .drag-content2 .completed > span {
         position: absolute;
         right: 8px;
@@ -289,6 +296,7 @@ button:active {
           -moz-transform: translateY(100%);
           -o-transform: translateY(100%); }
   .drag-n-drop-bg div .drag-right {
+    overflow: hidden;
     width: 43%;
     float: left; }
     .drag-n-drop-bg div .drag-right .dgd {
@@ -311,6 +319,7 @@ button:active {
         color: white; }
 
 .psd-template {
+  overflow: hidden;
   background: linear-gradient(#f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f6f6fa, #f9f9ff, #f9f9ff, #f9f9ff, #f9f9ff, white); }
   .psd-template .psd-row {
     position: relative;
@@ -355,6 +364,7 @@ button:active {
         -moz-transform: translateY(20%);
         -o-transform: translateY(20%); }
     .psd-template .psd-row .left-panel {
+      overflow: hidden;
       left: 12%;
       top: 42%; }
       .psd-template .psd-row .left-panel div .line-left {
@@ -365,11 +375,12 @@ button:active {
           border-color: #5584ff;
           margin-top: 9px; }
     .psd-template .psd-row .right-panel {
+      overflow: hidden;
       right: 12%;
       bottom: 14%; }
       .psd-template .psd-row .right-panel div .line-right {
         float: right;
-        width: 71%; }
+        width: 69%; }
         .psd-template .psd-row .right-panel div .line-right .outer-circle {
           left: 28%; }
         .psd-template .psd-row .right-panel div .line-right hr {
@@ -390,6 +401,7 @@ button:active {
       color: gray; }
 
 .pricing {
+  overflow: hidden;
   text-align: center; }
   .pricing .pricing-row {
     padding: 0 7em 3em 7em; }
@@ -578,6 +590,23 @@ button:active {
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity; }
 
+.cursor {
+  animation: blink 1s linear infinite;
+  font-weight: 300; }
+
+@keyframes blink {
+  20% {
+    opacity: 0.1; } }
+.animate {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+.pulse1 {
+  animation: pulse1 2s linear infinite; }
+
+@keyframes pulse1 {
+  20% {
+    opacity: 0.3; } }
 body {
   font-family: 'Roboto', sans-serif; }
 

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='../resources/images/favicon.ico' />
     <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/merkury.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../resources/css/animate.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
 </head>
@@ -39,12 +40,12 @@
         <div class="container">
             <div class="row dashboard-row">
                 <div class="get-started">
-                    <div>Grow Your business with MerKury</div>
+                    <div id="demo" class="typewriter"><span class="cursor">|</span></div>
                     <div>Your partner with crime!</div><br><br>
                     <button class="get-started-btn">Get started</button>
                 </div>
                 <div class="dashboard-img">
-                    <img src="../resources/images/dashboard.png" class="img-responsive box-shadow" alt="dashboard">
+                    <img src="../resources/images/dashboard.png" class="img-responsive box-shadow animated slideInUp" alt="dashboard">
                 </div>
             </div>
             
@@ -55,28 +56,28 @@
         <div class="container">
             <div class="row work-row">
                 <div class="col-sm-4 col-xs-6 text-center workflow">
-                    <div class="work-logo">
+                    <div class="work-logo wow bounceInLeft" data-wow-duration="" data-wow-offset="300">
                         <img src="../resources/images/lg1.png" class="img-responsive hvr-float-shadow" alt="logo1">
                     </div>
-                    <div class="work-title">Manage Your Workflow</div>
-                    <div class="work-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
-                    <button class="see-more-btn">See more</button>
+                    <div class="work-title wow zoomIn" data-wow-offset="100">Manage Your Workflow</div>
+                    <div class="work-content wow zoomIn" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
+                    <button class="see-more-btn wow zoomIn" data-wow-offset="100">See more</button>
                 </div>
                 <div class="col-sm-4 col-xs-6 text-center analytics">
-                    <div class="work-logo">
+                    <div class="work-logo wow bounceInUp" data-wow-duration="" data-wow-offset="300">
                         <img src="../resources/images/lg2.png" class="img-responsive hvr-float-shadow" alt="logo2">
                     </div>
-                    <div class="work-title">Analytics & Insights</div>
-                    <div class="work-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
-                    <button class="see-more-btn">See more</button>
+                    <div class="work-title wow zoomIn" data-wow-offset="100">Analytics & Insights</div>
+                    <div class="work-content wow zoomIn" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
+                    <button class="see-more-btn wow zoomIn" data-wow-offset="100">See more</button>
                 </div>
                 <div class="col-sm-4 col-xs-6 text-center organize">
-                    <div class="work-logo">
+                    <div class="work-logo wow bounceInRight" data-wow-duration="" data-wow-offset="300">
                         <img src="../resources/images/lg3.png" class="img-responsive hvr-float-shadow" alt="logo3">
                     </div>
-                    <div class="work-title">Organize Your Deadlines</div>
-                    <div class="work-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
-                    <button class="see-more-btn">See more</button>
+                    <div class="work-title wow zoomIn" data-wow-offset="100">Organize Your Deadlines</div>
+                    <div class="work-content wow zoomIn" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labotr et dolore magna aliqua.</div>
+                    <button class="see-more-btn wow zoomIn" data-wow-offset="100">See more</button>
                 </div>
             </div>
         </div>
@@ -85,7 +86,7 @@
     <div class="info">
         <div class="container info-container">
             <div class="row info-row">
-                <div class="col-sm-6 info-d">
+                <div class="col-sm-6 info-d wow slideInLeft" data-wow-offset="300" data-wow-duration="0.2">
                     <h1>All You need is a browser!</h1>
                     <p>Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.
                     </p>
@@ -100,7 +101,7 @@
                         <div> Ut enim ad minim veniam quis nosturd</div>
                     </div>
                 </div>
-                <div class="grupa-img">
+                <div class="grupa-img wow slideInRight" data-wow-offset="400" data-wow-duration="0.2" data-wow-delay="0.3s">
                     <img src="../resources/images/dash.png" class="img-responsive" alt="grupa">
                 </div>
             </div>
@@ -110,9 +111,9 @@
     <div class="drag-n-drop-bg">
         <div class="container">
             <div class="row">
-                <div class="drag-left">
+                <div class="drag-left wow bounceIn" data-wow-offset="300" data-wow-duration="1.2s">
                     <div class="drag-contents clearfix">
-                        <div class="drag-content1">
+                        <div class="drag-content1" >
                             <div class="p-title">In Progres&nbsp;&nbsp;&nbsp;<span class="p-count">(3)
                             </span><span class="glyphicon glyphicon-chevron-right pull-right bold-3"></span></div>
                             <div id="tasks1" class="tasks" draggable="true">
@@ -165,7 +166,7 @@
                     </div>
                 
             </div>
-            <div class="drag-right">
+            <div class="drag-right wow slideInRight" data-wow-offset="300" data-wow-duration="0.2">
                 <div class="dgd">Drag & Drop</div> 
                 <div class="dgd-contents">
                     <div class="dgd-content1">
@@ -206,24 +207,24 @@
                 <h1 class="text-center">Powerfull PSD Template</h1>
                 <div class="text-center fst">Lorem ipsum dolor sit amet, consectur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua.</div>
                 <div class="text-center">Ut enim ad minim veniam, quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.</div>
-                <div class="mockup">
+                <div class="mockup wow zoomIn" data-wow-duration="" data-wow-offset="250"> 
                     <img src="../resources/images/mockup.png" class="img-responsive" alt="mockup">
                 </div>
-                <div class="text-center col-xs-6 dis-no">
+                <div class="text-center col-xs-6 dis-no wow fadeInLeft"  data-wow-delay="0.2s" data-wow-duration="" data-wow-offset="50">
                     <h4>Clean & modern layout</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                 </div>
-                <div class="col-xs-6 text-center dis-no lst">
+                <div class="col-xs-6 text-center dis-no lst wow fadeInRight"  data-wow-delay="0.2s" data-wow-duration="" data-wow-offset="50">
                     <h4>Easy to customized</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                 </div>
-                <div class="left-panel">
+                <div class="left-panel wow fadeInLeft"  data-wow-delay="0.2s" data-wow-duration="" data-wow-offset="250">
                     <div class="col-sm-12 text-left">
                         <div class="rp-title">Clean & modern layout</div>
                         <div class="line-left">
                             <hr>
                             <div class="outer-circle">
-                                <div class="inner-circle"></div>
+                                <div class="inner-circle pulse1"></div>
                             </div>
                         </div>
                         <div class="left-content">
@@ -234,13 +235,13 @@
                     </div>
                 </div>
         
-                <div class="right-panel">
+                <div class="right-panel wow fadeInRight" data-wow-offset="" data-wow-duration="0.2" >
                     <div class="col-sm-12 text-right">
                         <div class="rp-title">Easy to customized</div>
                         <div class="line-right">
                             <hr>
                             <div class="outer-circle">
-                                <div class="inner-circle"></div>
+                                <div class="inner-circle pulse1"></div>
                             </div>
                         </div>
                         <div class="right-content">
@@ -258,8 +259,8 @@
     <div class="pricing">
         <div class="container">
             <div class="row pricing-row">
-                <h1>Check our pricing!</h1>
-                <div class="col-sm-4 col-xs-6 bronze">
+                <h1 class="wow jello" data-wow-offset="400">Check our pricing!</h1>
+                <div class="col-sm-4 col-xs-6 bronze wow flipInX" data-wow-duration="0.2" data-wow-offset="450">
                     <div class="price-box">
                         <div class="box-shadow hvr-grow-shadow">
                             <div class="plan-tag">bronze plan</div>
@@ -280,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-6 silver">
+                <div class="col-sm-4 col-xs-6 silver wow flipInX" data-wow-duration="0.2" data-wow-offset="450" data-wow-delay="0.2s">
                     <div class="price-box">
                         <div class="box-shadow hvr-grow-shadow">
                             <div class="plan-tag">silver plan</div>
@@ -301,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-6 gold">
+                <div class="col-sm-4 col-xs-6 gold wow flipInX" data-wow-duration="0.2" data-wow-offset="450" data-wow-delay="0.4s">
                     <div class="price-box">
                         <div class="box-shadow hvr-grow-shadow">
                             <div class="plan-tag">gold plan</div>
@@ -366,6 +367,7 @@
 
     <script src="../resources/js/jquery.min.js"></script>
     <!-- <script src="../resources/js/bootstrap.min.js"></script> -->
-    <script src="../resources/js/merkury.min.js"></script>
+    <script src="../resources/js/wow.min.js"></script>
+    <script src="../resources/js/merkury.js"></script>
 </body>
 </html>

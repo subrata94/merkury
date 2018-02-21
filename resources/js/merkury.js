@@ -1,3 +1,4 @@
+new WOW().init();
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -9,7 +10,21 @@ function scrollFunction() {
 function openNav() {document.getElementById("mySidenav").style.width = "250px";}
 function closeNav() {document.getElementById("mySidenav").style.width = "0";}
 
+var txt = 'Grow Your business with Merkury';
+var i = 0;
+function typeWriter(){
+    if (i < txt.length) {
+        //document.getElementById("demo").innerHTML += txt.charAt(i++);
+        $(".cursor").before(txt.charAt(i++));
+        setTimeout(typeWriter, 70);
+    }else{
+        $(".cursor").hide();
+    }
+}
+window.onload = function(){typeWriter()};
+
 $(function(){
+
     var id,
         slider=1,
         p_count=3,
@@ -52,4 +67,14 @@ $(function(){
     $('.completed::after').on('click',function(){
         alert("hello");
     });
+
+    // function scroll(){
+    //     $('').click(function( event ) {
+    //         var offset = $( this ).offset();
+    //         event.stopPropagation();
+    //         $( "#result" ).text( this.tagName +
+    //           " coords ( " + offset.left + ", " + offset.top + " )" );
+    //       });
+    // }
+
 });

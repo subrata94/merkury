@@ -117,6 +117,7 @@
         }
     }
     .dashboard-img{
+        overflow-y: hidden;
         width: 41%;
         position: absolute;
         left: 50%;
@@ -127,6 +128,7 @@
 }
 
 .work{
+    overflow: hidden;
     .work-row {
         text-align: center;
         margin-bottom: 1.2em;
@@ -180,6 +182,7 @@
 }
 
 .info{
+    overflow: hidden;
     padding: 5em 0 7.5em 0;
     overflow: hidden;
     background: linear-gradient(white,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,
@@ -229,6 +232,7 @@
 }
 
 .drag-n-drop-bg{
+    overflow: hidden;
     background-image: url("../images/drag.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,6 +321,9 @@
                             }
                             
                         }
+                        &:hover{
+                            cursor: url("../images/pointer.cur"),auto;
+                        }
                     }
                 }
                 .drag-content2{
@@ -350,6 +357,7 @@
             } 
         }
         .drag-right{
+            overflow: hidden;
             width: 43%;
             float: left;
             .dgd{
@@ -387,6 +395,7 @@
 }
 
 .psd-template{
+    overflow: hidden;
     background: linear-gradient(#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,#f6f6fa,
             #f6f6fa,#f9f9ff,#f9f9ff,#f9f9ff,#f9f9ff,white);
     .psd-row{
@@ -439,6 +448,7 @@
                 }
             }
             .left-panel{
+                overflow: hidden;
                 left: 12%;
                 top: 42%;
                 div {
@@ -456,12 +466,13 @@
                 }
             }
             .right-panel{
+                overflow: hidden;
                 right: 12%;
                 bottom: 14%;
                 div {
                     .line-right {
                         float: right;
-                        width: 71%;
+                        width: 69%;
                         .outer-circle{
                             left: 28%;
                             @extend  %outer-circle;
@@ -494,6 +505,7 @@
 }
 
 .pricing{
+    overflow: hidden;
     text-align: center;
     .pricing-row {
         padding: 0 7em 3em 7em;
@@ -751,6 +763,59 @@
     transition-duration: 0.2s;
     -webkit-transition-property: transform, opacity;
     transition-property: transform, opacity;
+}
+
+.cursor{
+    animation: blink 1s linear infinite;
+    font-weight: 300;
+}
+@keyframes blink{
+    20%{opacity: 0.1;}
+}
+.animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+// .slideUp {
+//     -webkit-animation-name: slideUp;
+//     animation-name: slideUp;
+// }
+
+// @-webkit-keyframes slideUp {
+//     from {
+//       -webkit-transform: translate(0, 0);
+//       transform: translate(0, 0);
+//       visibility: visible;
+//     }
+  
+//     to {
+//       -webkit-transform: translate(0, 0);
+//       transform: translate(0, 0);
+//     }
+//   }
+  
+//   @keyframes slideUp {
+//     from {
+//         opacity: 0.5;
+//         -webkit-transform: translate(0, 100%);
+//         transform: translate(0, 100%);
+//         visibility: visible;
+//       }
+    
+//       to {
+//           opacity: 1;
+//         -webkit-transform: translate(0, 0);
+//         transform: translate(0, 0);
+//       }
+//   }
+
+  .pulse1{
+        animation: pulse1 2s linear infinite;
+  }
+  
+@keyframes pulse1{
+        20%{opacity: 0.3;}
 }
 
 @import 'merkury-res';
