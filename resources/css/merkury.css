@@ -434,7 +434,7 @@ button:active {
           font-size: 12px;
           text-align: left; }
           .pricing .pricing-row .bronze .box-shadow .offers ul, .pricing .pricing-row .silver .box-shadow .offers ul, .pricing .pricing-row .gold .box-shadow .offers ul {
-            width: 16em;
+            width: 14em;
             margin: auto; }
             .pricing .pricing-row .bronze .box-shadow .offers ul li, .pricing .pricing-row .silver .box-shadow .offers ul li, .pricing .pricing-row .gold .box-shadow .offers ul li {
               line-height: 13px;
