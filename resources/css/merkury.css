@@ -91,6 +91,7 @@ button:active {
         margin-left: 50px; }
 
 .dashboard {
+  background-attachment: fixed;
   background-image: url("../images/home.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,6 +209,7 @@ button:active {
 
 .drag-n-drop-bg {
   overflow: hidden;
+  background-attachment: fixed;
   background-image: url("../images/drag.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -654,7 +656,7 @@ button:active {
     .psd-template .psd-row .left-panel hr {
       margin-bottom: 14px; }
     .psd-template .psd-row .left-panel .line-left {
-      width: 91% !important; }
+      width: 88.3% !important; }
     .psd-template .psd-row .left-panel .outer-circle {
       top: 21% !important;
       left: 85% !important; }
@@ -664,7 +666,7 @@ button:active {
     .psd-template .psd-row .right-panel hr {
       margin-bottom: 14px; }
     .psd-template .psd-row .right-panel .line-right {
-      width: 84% !important; }
+      width: 83% !important; }
     .psd-template .psd-row .right-panel .outer-circle {
       top: 21% !important;
       left: 14% !important; }
@@ -713,7 +715,7 @@ button:active {
       margin-top: 6px;
       margin-bottom: 14px; }
     .psd-template .psd-row .left-panel .line-left {
-      width: 100% !important; }
+      width: 96.5% !important; }
     .psd-template .psd-row .left-panel .outer-circle {
       left: 91% !important; }
   .psd-template .psd-row .right-panel {
@@ -723,7 +725,7 @@ button:active {
       margin-top: 6px;
       margin-bottom: 14px; }
     .psd-template .psd-row .right-panel .line-right {
-      width: 96% !important; }
+      width: 92.5% !important; }
     .psd-template .psd-row .right-panel .outer-circle {
       left: 5% !important; }
   .psd-template .rp-title {

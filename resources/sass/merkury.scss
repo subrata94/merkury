@@ -80,6 +80,7 @@
 }
 
 .dashboard{
+    background-attachment: fixed;
     background-image: url("../images/home.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,6 +234,7 @@
 
 .drag-n-drop-bg{
     overflow: hidden;
+    background-attachment: fixed;
     background-image: url("../images/drag.png");
     background-repeat: no-repeat;
     background-size: cover;
